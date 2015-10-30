@@ -1,0 +1,72 @@
+---
+title: "Homework 1"
+author: "Vladislav Zakatov"
+date: "15 October 2015"
+output: pdf_document
+---
+
+This document has been created as part of the first homework assignment at CMF.
+
+Initially, the working directory is set and the required *quantmod* package is loaded.
+
+```{r results='hide', message=FALSE}
+##### Initialisation #####
+setwd("~/")
+Sys.setlocale("LC_ALL","English")
+library(quantmod)
+```
+
+The historical prices of S&P 500 index, Apple and IBM from 2002 up to present are loaded from Yahoo Finance using *getSymbols* function from *quantmod* package. The raw data frames are then merged into a single xts using only adjusted prices.
+
+```{r results='hide'}
+##### Loading data #####
+tickers = c("SPY", "AAPL", "IBM") # specify the tickers to load
+
+e <- new.env() # environment where data will be stored
+
+# suppress warning about future change in the function behaviour
+options("getSymbols.warning4.0"=FALSE) 
+
+# load data from Yahoo Finance
+getSymbols(tickers, src = "yahoo", from="2002-01-01", env=e) 
+
+# merge data into a single xts taking only adjusted prices
+df = do.call(merge, eapply(e, Ad)[tickers]) 
+names(df) = tickers
+```
+
+Daily returns are calculated and saved as *xts*.
+
+```{r}
+##### Calculate returns #####
+rets = apply(df, 2, function(x) diff(x)/x[-length(x)])
+rets = xts(rets, order.by = index(df)[-1])
+```
+
+Both prices and returns are then plotted. 
+
+```{r fig.width = 12, fig.height = 17}
+##### Plot prices and returns #####
+for (i in 1:ncol(df))
+{
+  par(mfrow=c(2,1))
+  plot(df[,i], main = paste(tickers[i], "price"))
+  plot(rets[,i], main = paste(tickers[i], "returns"))
+  par(mfrow=c(1,1))
+}
+```
+
+The user-defined function *stats* calculates mean and standard deviation of the returns series which is passed as an argument to the function.
+
+```{r}
+###### Calculate mean return and return s.d. #####
+stats = function(r)
+{
+  x = c(mean(r), sd(r))
+  names(x) = c("Mean", "SD")
+  return(x)
+}
+
+options(digits=4)
+apply(rets, 2, stats)
+```

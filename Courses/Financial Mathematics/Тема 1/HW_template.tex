@@ -1,0 +1,226 @@
+% -*- program: xelatex -*-
+\documentclass[a4paper,12pt]{article}
+%---------------
+% Обычные параметры для XeLaTeX
+%---------------
+\usepackage{amsfonts,longtable,amsmath,amssymb,mathtools}
+\usepackage[cm-default]{fontspec}
+\usepackage{polyglossia} % Языки: русский, английский
+%\usepackage{fourier}
+%\DeclareMathAlphabet{\pazocal}{OMS}{zplm}{m}{n}
+%\newcommand{\La}{\mathcal{L}}
+%\newcommand{\Lb}{\pazocal{L}}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Ligatures=TeX}
+\usepackage{mathrsfs}
+%\usepackage{unicode-math}
+%\unimathsetup{math-style=TeX}
+\newfontfamily\cyrillicfont[Mapping=tex-text]{Times New Roman}
+\newfontfamily{\cyrillicfonttt}{Times New Roman}
+\setmainfont[Mapping=tex-text]{Times New Roman}
+\setdefaultlanguage[spelling=modern]{russian}
+
+\usepackage{xecyr}
+\defaultfontfeatures{Scale=MatchLowercase}
+
+%---------------
+% Параметры для PdfLaTeX?
+%---------------
+%\usepackage{cmap} % Улучшенный поиск русских слов в полученном pdf-файле
+%\usepackage[T2A]{fontenc} % Поддержка русских букв
+%\usepackage[utf8]{inputenc} % Кодировка utf8
+%\usepackage{fontenc}
+%\usepackage[english, russian]{babel} % Языки: русский, английский
+%\usepackage{pscyr}
+%\setmathfont{XITS Math}
+%\setmainfont[Mapping=tex-text]{Calibri}
+%\setotherlanguage{english}
+%---------------
+% Параметры для документа
+%---------------
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\usepackage[some]{background}
+% Не используемые из-за пакета geometry параметры
+%\oddsidemargin=0pt
+%\textwidth=460pt
+%\topmargin=-30pt
+%\voffset=0pt
+%\headheight=0pt
+%\headsep=30pt
+\textheight=700pt
+\usepackage{setspace} % Междустрочные интервалы
+\onehalfspacing % Установка полуторного интервала
+\usepackage{hyperref} % Гиперссылки с отключенным параметром рамок вокруг ссылок
+\usepackage{xcolor} % Поддержка различных цветов
+\hypersetup{
+	colorlinks,
+	linkcolor={red!50!black},
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black}
+}
+\usepackage{wrapfig} % Плавающие изображения
+\usepackage{multicol} % Поддержка объединения колонок в таблицах
+\usepackage{multirow} % Поддержка объединения рядов в таблицах 
+\columnsep=30pt % Что это?
+\makeatletter % Что это?
+\usepackage[strict]{changepage}
+\usepackage{booktabs}
+\newcommand{\minitab}[2][l]{\begin{tabular}{#1}#2\end{tabular}}
+%\usepackage{slashbox} % Ячейка с косой чертой в таблицах
+\usepackage{listings} % Окружение для исходного кода
+\usepackage{epigraph} % Поддержка эпиграфов
+%\usepackage{indentfirst} % Поддержка красной строки
+\usepackage{yfonts} % Поддержка старых готических шрифтов
+\usepackage{lettrine} % Пакет для каллиграфических первых букв в абзацах (буквицы?)
+%\usepackage{scrextend} % Какой-то сложный пакет
+\usepackage{enumitem} % Пакет для управления окружениями списков
+\setlist{nosep} % or \setlist{noitemsep} to leave space around whole list
+\usepackage{framed} % Прямоугольники, линии
+\usepackage{rotating} % Пакет для поворота объектов (например, таблиц)
+%---------------
+% Изменение команд
+%---------------
+\renewcommand \thesection {\arabic{section}}
+\renewcommand \thesubsection {\arabic{section}.\arabic{subsection}}
+\renewcommand{\@listi}{
+	% вертикальные промежутки:
+	\topsep=0pt % вокруг списка
+	\parsep=0pt % между абзацами
+	\itemsep=0pt % между пунктами
+	% горизонтальные промежутки:
+	\itemindent=0pt % абзацный выступ
+	\labelsep=1ex % расстояние до метки
+	\leftmargin=\parindent % отступ слева
+	\rightmargin=0pt} % отступ справа
+%---------------
+% Изменение колонтитулов
+\usepackage{fancyhdr} % Пакет для изменения колонтитулов
+\pagestyle{fancy}
+\fancypagestyle{liststyle}
+{
+	\fancyhf{}
+	\renewcommand\headrulewidth{0pt}
+%\rhead{А.С. Пушкин}
+%\lhead{Финансовая математика, домашнее задание №0}
+}
+
+\makeatletter
+\renewcommand\tableofcontents{%
+	\if@twocolumn
+	\@restonecoltrue\onecolumn
+	\else
+	\@restonecolfalse
+	\fi
+	\pagestyle{liststyle}
+	\@starttoc{toc}%
+	\if@restonecol\twocolumn\fi
+}
+\makeatother
+
+%\rhead{А.С. Пушкин}
+\chead{}
+%\lhead{Финансовая математика, домашнее задание №0}
+\lfoot{}
+\cfoot{\normalsize\thepage}
+\rfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist
+%---------------
+%\renewcommand{\alph}[1]{\asbuk{#1}} % костыль для кирилической нумерации
+% вместо латинской
+%\setenumerate[1]{label=\alph*),nolistsep}
+\setenumerate[1]{label=\bf\arabic*.}
+\setenumerate[2]{label=\arabic*, fullwidth, itemindent=\doubleparindent,listparindent=\parindent}
+%\setenumerate[1]{nolistsep, itemsep=0.3cm,parsep=0pt}
+\setitemize[1]{nolistsep}
+%---------------
+\newenvironment{quotationb}%
+{\begin{leftbar}\begin{quotation}}%
+		{\end{quotation}\end{leftbar}} % for adjustwidth environment
+% Важное окружение formal
+%---------------
+\definecolor{formalshade}{rgb}{0.95,0.95,1}
+\newenvironment{formal}{%
+	\def\FrameCommand{%
+		\hspace{1pt}%
+		{\color{black}\vrule width 1.5pt}%
+		{\color{white}\vrule width 4pt}%
+		\colorbox{white}%
+	}%
+	\MakeFramed{\advance\hsize-\width\FrameRestore}%
+	\noindent\hspace{-4.55pt}% disable indenting first paragraph
+	\begin{adjustwidth}{}{7pt}%
+		\vspace{2pt}\vspace{2pt}%
+	}
+	{%
+		\vspace{2pt}\end{adjustwidth}\endMakeFramed%
+}
+% Cписок с точками без интервалов между пунктами
+%---------------
+\newenvironment{compactlist}{
+	\begin{list}{{$\bullet$}}{
+			\setlength\partopsep{0pt}
+			\setlength\parskip{0pt}
+			\setlength\parsep{0pt}
+			\setlength\topsep{0pt}
+			\setlength\itemsep{0pt}
+		}
+	}{
+\end{list}
+}
+%---------------
+% Пакеты для построения графиков и параметры для них
+%---------------
+\usepackage{pgf,tikz} % Чертежи и графики
+\newcommand\LM{\ensuremath{\mathit{LM}}} % Реликты старых графиков
+\newcommand\IS{\ensuremath{\mathit{IS}}} % Реликты старых графиков
+\usetikzlibrary{arrows,calc,intersections,patterns,decorations.fractals}
+\usepackage{relsize} % Относительный размер в графиках
+
+% Важная команда для получения координат
+%---------------
+\newcommand{\gettikzxy}[3]{%
+	\tikz@scan@one@point\pgfutil@firstofone#1\relax
+	\edef#2{\the\pgf@x}%
+	\edef#3{\the\pgf@y}%
+}
+\title{Курс <<Введение в основы финансовой математики>>.\\Домашнее задание №0.}
+\date{}
+\author{А.С. Пушкин | Mandelbrot}
+
+\begin{document}
+\maketitle
+\subsection*{Задача 1}
+\begin{formal}
+\begin{itemize}
+	\item[(i)] Докажите формулу для плотности случайной величины $S_n$:
+	$$
+	f_{S_n}(t) = e^{-\Lambda(t)}\dfrac{(\Lambda(t))^{n-1}}{(n-1)!}\lambda(t).
+	$$
+	
+	\textit{Подсказка:} Доказательство можно провести по индукции. При доказательстве шага индукции используйте равенство
+	$$
+	\mathbb{P}\left\{N_t = n\right\} = \mathbb{P}\left\{S_n \leq t\right\} - \mathbb{P}\left\{S_{n+1}\leq t \right\}.
+	$$
+	\item[(ii)] Докажите, что справедлива формула
+	$$
+	\mathbb{P}\left\{\xi_{k+1}\leq t | S_k = s \right\} = 1 - e^{-\Lambda(s+t) + \Lambda(s)}
+	$$
+	\item[(iii)] Докажите формулу для функции распределения величины $\xi_k$ для $k\geq 2$:
+	$$
+	F_{\xi_k} = 1 - \int_{0}^{\infty} e^{-\Lambda(t+s)}\dfrac{(\Lambda(s))^{k-2}}{(k-2)!}\lambda(s)ds.
+	$$
+\end{itemize}
+\end{formal}
+\textbf{\large Решение:}
+
+(i) Проведем доказательство по индукции. Докажем утверждение для базы индукции, которой является случай $n = 1$. В этом случае следует доказать
+$$
+f_{S_1}(t) = e^{-\Lambda(t)}\cdot \lambda(t)
+$$
+Это равенство, действительно, выполняется, так как...
+
+\end{document}

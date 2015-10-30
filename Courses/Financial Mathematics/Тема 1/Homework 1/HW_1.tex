@@ -1,0 +1,388 @@
+% -*- program: xelatex -*-
+\documentclass[a4paper,12pt]{article}
+%---------------
+% Обычные параметры для XeLaTeX
+%---------------
+\usepackage{amsfonts,longtable,amsmath,amssymb,mathtools}
+\usepackage[cm-default]{fontspec}
+\usepackage{polyglossia} % Языки: русский, английский
+%\usepackage{fourier}
+%\DeclareMathAlphabet{\pazocal}{OMS}{zplm}{m}{n}
+%\newcommand{\La}{\mathcal{L}}
+%\newcommand{\Lb}{\pazocal{L}}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Ligatures=TeX}
+\usepackage{mathrsfs}
+%\usepackage{unicode-math}
+%\unimathsetup{math-style=TeX}
+\newfontfamily\cyrillicfont[Mapping=tex-text]{Times New Roman}
+\newfontfamily{\cyrillicfonttt}{Times New Roman}
+\setmainfont[Mapping=tex-text]{Times New Roman}
+\setdefaultlanguage[spelling=modern]{russian}
+
+\usepackage{xecyr}
+\defaultfontfeatures{Scale=MatchLowercase}
+
+%---------------
+% Параметры для PdfLaTeX?
+%---------------
+%\usepackage{cmap} % Улучшенный поиск русских слов в полученном pdf-файле
+%\usepackage[T2A]{fontenc} % Поддержка русских букв
+%\usepackage[utf8]{inputenc} % Кодировка utf8
+%\usepackage{fontenc}
+%\usepackage[english, russian]{babel} % Языки: русский, английский
+%\usepackage{pscyr}
+%\setmathfont{XITS Math}
+%\setmainfont[Mapping=tex-text]{Calibri}
+%\setotherlanguage{english}
+%---------------
+% Параметры для документа
+%---------------
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\usepackage[some]{background}
+% Не используемые из-за пакета geometry параметры
+%\oddsidemargin=0pt
+%\textwidth=460pt
+%\topmargin=-30pt
+%\voffset=0pt
+%\headheight=0pt
+%\headsep=30pt
+\textheight=700pt
+\usepackage{setspace} % Междустрочные интервалы
+\onehalfspacing % Установка полуторного интервала
+\usepackage{hyperref} % Гиперссылки с отключенным параметром рамок вокруг ссылок
+\usepackage{xcolor} % Поддержка различных цветов
+\hypersetup{
+	colorlinks,
+	linkcolor={red!50!black},
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black}
+}
+\usepackage{wrapfig} % Плавающие изображения
+\usepackage{multicol} % Поддержка объединения колонок в таблицах
+\usepackage{multirow} % Поддержка объединения рядов в таблицах 
+\columnsep=30pt % Что это?
+\makeatletter % Что это?
+\usepackage[strict]{changepage}
+\usepackage{booktabs}
+\newcommand{\minitab}[2][l]{\begin{tabular}{#1}#2\end{tabular}}
+%\usepackage{slashbox} % Ячейка с косой чертой в таблицах
+\usepackage{listings} % Окружение для исходного кода
+\usepackage{epigraph} % Поддержка эпиграфов
+%\usepackage{indentfirst} % Поддержка красной строки
+\usepackage{yfonts} % Поддержка старых готических шрифтов
+\usepackage{lettrine} % Пакет для каллиграфических первых букв в абзацах (буквицы?)
+%\usepackage{scrextend} % Какой-то сложный пакет
+\usepackage{enumitem} % Пакет для управления окружениями списков
+\setlist{nosep} % or \setlist{noitemsep} to leave space around whole list
+\usepackage{framed} % Прямоугольники, линии
+\usepackage{rotating} % Пакет для поворота объектов (например, таблиц)
+%---------------
+% Изменение команд
+%---------------
+\renewcommand \thesection {\arabic{section}}
+\renewcommand \thesubsection {\arabic{section}.\arabic{subsection}}
+\renewcommand{\@listi}{
+	% вертикальные промежутки:
+	\topsep=0pt % вокруг списка
+	\parsep=0pt % между абзацами
+	\itemsep=0pt % между пунктами
+	% горизонтальные промежутки:
+	\itemindent=0pt % абзацный выступ
+	\labelsep=1ex % расстояние до метки
+	\leftmargin=\parindent % отступ слева
+	\rightmargin=0pt} % отступ справа
+%---------------
+% Изменение колонтитулов
+\usepackage{fancyhdr} % Пакет для изменения колонтитулов
+\pagestyle{fancy}
+\fancypagestyle{liststyle}
+{
+	\fancyhf{}
+	\renewcommand\headrulewidth{0pt}
+%\rhead{А.С. Пушкин}
+%\lhead{Финансовая математика, домашнее задание №0}
+}
+
+\makeatletter
+\renewcommand\tableofcontents{%
+	\if@twocolumn
+	\@restonecoltrue\onecolumn
+	\else
+	\@restonecolfalse
+	\fi
+	\pagestyle{liststyle}
+	\@starttoc{toc}%
+	\if@restonecol\twocolumn\fi
+}
+\makeatother
+
+%\rhead{А.С. Пушкин}
+\chead{}
+%\lhead{Финансовая математика, домашнее задание №0}
+\lfoot{}
+\cfoot{\normalsize\thepage}
+\rfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist
+%---------------
+%\renewcommand{\alph}[1]{\asbuk{#1}} % костыль для кирилической нумерации
+% вместо латинской
+%\setenumerate[1]{label=\alph*),nolistsep}
+\setenumerate[1]{label=\bf\arabic*.}
+\setenumerate[2]{label=\arabic*, fullwidth, itemindent=\doubleparindent,listparindent=\parindent}
+%\setenumerate[1]{nolistsep, itemsep=0.3cm,parsep=0pt}
+\setitemize[1]{nolistsep}
+%---------------
+\newenvironment{quotationb}%
+{\begin{leftbar}\begin{quotation}}%
+		{\end{quotation}\end{leftbar}} % for adjustwidth environment
+% Важное окружение formal
+%---------------
+\definecolor{formalshade}{rgb}{0.95,0.95,1}
+\newenvironment{formal}{%
+	\def\FrameCommand{%
+		\hspace{1pt}%
+		{\color{black}\vrule width 1.5pt}%
+		{\color{white}\vrule width 4pt}%
+		\colorbox{white}%
+	}%
+	\MakeFramed{\advance\hsize-\width\FrameRestore}%
+	\noindent\hspace{-4.55pt}% disable indenting first paragraph
+	\begin{adjustwidth}{}{7pt}%
+		\vspace{2pt}\vspace{2pt}%
+	}
+	{%
+		\vspace{2pt}\end{adjustwidth}\endMakeFramed%
+}
+% Cписок с точками без интервалов между пунктами
+%---------------
+\newenvironment{compactlist}{
+	\begin{list}{{$\bullet$}}{
+			\setlength\partopsep{0pt}
+			\setlength\parskip{0pt}
+			\setlength\parsep{0pt}
+			\setlength\topsep{0pt}
+			\setlength\itemsep{0pt}
+		}
+	}{
+\end{list}
+}
+%---------------
+% Пакеты для построения графиков и параметры для них
+%---------------
+\usepackage{pgf,tikz} % Чертежи и графики
+\newcommand\LM{\ensuremath{\mathit{LM}}} % Реликты старых графиков
+\newcommand\IS{\ensuremath{\mathit{IS}}} % Реликты старых графиков
+\usetikzlibrary{arrows,calc,intersections,patterns,decorations.fractals}
+\usepackage{relsize} % Относительный размер в графиках
+
+% Важная команда для получения координат
+%---------------
+\newcommand{\gettikzxy}[3]{%
+	\tikz@scan@one@point\pgfutil@firstofone#1\relax
+	\edef#2{\the\pgf@x}%
+	\edef#3{\the\pgf@y}%
+}
+\title{Курс <<Введение в основы финансовой математики>>.\\Домашнее задание №1.}
+\date{}
+\author{В.П. Закатов | Mandelbrot}
+
+\begin{document}
+\maketitle
+
+\subsection*{Задача 1}
+\begin{formal}
+Вычислить мартингальные вероятности для одношаговой биномиальной модели.
+\end{formal}
+\textbf{\large Решение:}
+
+В одношаговой биномиальной модели мы имеем два фиксированных момента времени $t=0$ и $t=1$, а также два актива: облигация (банковский счет с безрисковой ставкой $R$ по депозиту) и акция (рискованный актив). 
+
+Цена облигации определена как
+\begin{equation*}
+	B_0 = 1
+\end{equation*}
+\begin{equation*}
+	B_1 = 1 + R
+\end{equation*}
+
+Цена акции определена как 
+\begin{equation*}
+	S_0 = s
+\end{equation*}
+\begin{equation*}
+	S_1 = sZ,
+\end{equation*}
+где
+\begin{equation*}
+	Z = \begin{cases} u \text{, с вероятностью $p_u$} \\ d \text{, с вероятностью $p_d$} \end{cases}
+\end{equation*}
+
+Для того, чтобы на рынке отсутствовали арбитражные возможности, должно выполняться следующее неравенство:
+
+\begin{equation}
+	d < (1+R) < u
+\end{equation}
+
+Легко показать, что при невыполнении данного условия можно построить портфель, который будет гарантированно приносить прибыль в момент времени $t = 1$ при нулевой стоимости в момент времени $t = 0$. Например, если $d \geq (1+R)$, тогда, имея нулевой капитал в периоде $t=0$, можно занять деньги на денежном рынке (продав облигацию) и использовать полученные средства на покупку акции. Тогда, даже при неблагоприятном исходе у инвестора будет достаточно средств в момент $t=1$, чтобы расплатиться с долгом по облигации, а также будет ненулевая вероятность получения прибыли, так как $u > d \geq (1+R)$. Данная ситуация является арбитражной и должна быстро исчезнуть по закону спроса и предложения, когда достаточное количество инвесторов ей воспользуются. Ситуация $u \leq (1+R)$ аналогична предыдущей, инвестору необходимо продать акцию и использовать средства на покупку облигации.
+
+Таким образом, предполагая, что неравенство (1) выполняется, возможно найти такую пару чисел ($q_u, q_d$), так что ($1+R$) можно записать как следующую выпуклую комбинацию:
+\begin{equation}
+	(1+R) = q_u u + q_d d,
+\end{equation}
+где $q_u, q_d \geq 0$ и $q_u + q_d = 1$. Получаем
+\begin{equation*}
+	(1+R) = q_u u + (1-q_u) d
+\end{equation*}
+\begin{equation}
+	q_u = \frac{(1+R) - d}{u-d}
+\end{equation}
+тогда
+\begin{equation}
+	q_d = \frac{u - (1+R)}{u-d}
+\end{equation}
+
+Формулы (3) и (4) являются мартингальными вероятностями.
+
+\subsection*{Задача 2}
+\begin{formal}
+Рассмотрим некоторый дериватив $D_0$ в одношаговой модели ($B$; $S$) рынка (модели, описанной в лекции) без арбитражных возможностей. Зададим реплицирующую этот дериватив стратегию $\phi$ (напомним, что ее cash flow по определению соответствует таковому у дериватива). Покажите, что если $D_0 \neq V_0(\phi)$, то есть, цена дериватива не соответствует стоимости реплицирующего портфеля в нулевой момент времени, то на рынке возможен арбитраж для расширенной стратегии ($\hat{\phi}$) = ($\phi$;$\gamma$), где $\gamma$ — количество единиц дериватива в расширенном портфеле.
+\end{formal}
+\textbf{\large Решение:}
+
+Дериватив $D_0$ в одношаговой модели ($B$; $S$) рынка без арбитражных возможностей имеет функцию выплат $\Phi$. Если данное обязательство достижимо в момент времени $t=1$, то существует такой портфель $h = (x,y)$, что
+\begin{equation*}
+	V_1^h = \Phi(u) \text{, если $Z=u$}
+\end{equation*}
+\begin{equation*}
+	V_1^h = \Phi(d) \text{, если $Z=d$}
+\end{equation*}
+
+Данные уравнения можно записать следующей системной уравнений:
+\begin{equation*}
+	\begin{cases}
+		(1+R)x+suy = \Phi(u)\\
+		(1+R)x+sdy = \Phi(d)
+	\end{cases}
+\end{equation*}
+
+Данная система имеет единственное решение (предполагая $d<u$) и можно записать
+\begin{equation*}
+	x = \frac{1}{1+R} \frac{u\Phi(d)-d\Phi(u)}{u-d}
+\end{equation*}
+\begin{equation*}
+	y = \frac{1}{s} \frac{\Phi(u)-\Phi(d)}{u-d}
+\end{equation*}
+
+Тогда наш реплицирующий портфель $h=(x,y)$ должен иметь следующую стоимость в момент времени $t=0$
+\begin{equation*}
+	V_0^h = x+sy = \frac{1}{1+R} \bigg( \frac{(1+R) - d}{u-d} \Phi(u) + \frac{u - (1+R)}{u-d} \Phi(d) \bigg) = \frac{1}{1+R} E^Q [D_1] = D_0
+\end{equation*}
+
+Мы показали, что если существует портфель $h = (x,y)$, полностью реплицирующий выплаты по деривативу в момент $t=1$, то стоимость дериватива $D_0$ и портфеля $V_0^h$ должны быть равны в момент времени $t=0$.
+
+Если $D_0 \neq V_0(\phi)$, тогда можно будет составить такой портфель ($\hat{\phi}$) = ($\phi$;$\gamma$) (где $\gamma$ — количество единиц дериватива в расширенном портфеле), состоящий из дериватива и реплицирующего порфтеля, который принесет арбитражную прибыль.
+
+К примеру, предположим $D_0 > V_0(\phi)$. Тогда возможно продать $\frac{V_0(\phi)}{D_0}$ единиц дериватива и купить 1 единицу реплицирующего портфеля. Тогда, в момент $t=0$ стоимость такого портфеля будет равна нулю:
+\begin{equation}
+	V_0(\phi) - \frac{V_0(\phi)}{D_0} D_0 = 0
+\end{equation}
+
+В момент времени $t=1$ мы имеем 
+\begin{equation}
+	V_1(\phi) - \frac{V_0(\phi)}{D_0} D_1 = \Big( 1 - \frac{V_0(\phi)}{D_0} \Big)
+\end{equation}
+
+Так как $D_0 > V_0(\phi)$, то $\frac{V_0(\phi)}{D_0} < 1$. Следовательно, мы нулевой стоимости порфтеля в начальный момент времени, мы имеет положительную стоимость порфтеля в момент $t=1$ с вероятностью 1. Данная ситуция является арбитражной. 
+
+Случай $D_0 < V_0(\phi)$ рассматривается аналогично, где мы купим 1 единицу дериватива и продадим $\frac{D_0}{V_0(\phi)}$.
+
+
+\subsection*{Задача 3}
+\begin{formal}
+Докажите, что если в одношаговой биномиальной модели с вероятностью 1 выполняется $V_0(X) \neq X$, иначе говоря, стоимость портфеля в нулевой момент времени не равна суммарной стоимости его компонентов ($B$, облигаций и $S$, акций), то существует безрисковый доход.
+
+\end{formal}
+\textbf{\large Решение:}
+
+Для подхода к данной задаче мы можем рассматривать стоимость порфеля в момент времени $t=0$ как некоторый дериватив, который реплицирует выплаты по составным частям портфеля в момент времени $t=1$. Данную задачу можно свести к предыдущей, показав, что если $V_0(X) \neq X$, тогда всегда можно составить порфель, состоящий из изначального портфеля и его составлных частей, где будут куплены относительно недооцененные части и проданы относительно переоцененные части. Такой портфель всегда будет арбитражным, пока цены не вернутся к равновесным значением и не будет выполнятся условие $V_0(X) = X$.
+
+
+\subsection*{Задача 4}
+\begin{formal}
+Цена акции в настоящий момент составляет \$40. Известно, что в конце месяца она составит либо \$42, либо \$38. Ставка дисконтирования равна 8\% в год, считать, что она разбивается на 12 месячных ставок. Найти стоимость 1-месячного европейского опциона типа ``колл'' с ценой страйка, составляющей \$39 с помощью:
+\begin{itemize}
+	\item Создания реплицирующего портфеля.
+	\item Расчета риск-нейтральных вероятностей в одношаговой биномиальной модели.
+\end{itemize}
+\end{formal}
+\textbf{\large Решение:}
+
+Мы имеем $s = 40$, $u = \frac{42}{40}$, $d = \frac{38}{40}$, $R = 0.08 / 12$, $K = 38$. Выплата опциона колл опрелена как $D_1 = \max(S_1 - K, 0)$ и равна в момент времени $t=1$ $\Phi(u) = 3$ и $\Phi(d) = 0$ в благоприятном и неблагоприятном исходах, соответсвенно.
+
+1. Найдем стоимость опциона колл с помощью реплицируешего портфеля. Рассмотрим портфель $h = (x,y)$, где 
+\begin{equation*}
+	x = \frac{1}{1+R} \frac{u\Phi(d)-d\Phi(u)}{u-d} = -28.31
+\end{equation*}
+\begin{equation*}
+	y = \frac{1}{s} \frac{\Phi(u)-\Phi(d)}{u-d} = 0.75
+\end{equation*}
+
+Стоимость портфеля в начальный момент времени составляет
+\begin{equation*}
+	V_0^h = x+sy = -28.31 + 40*0.75 = 1.68
+\end{equation*}
+
+2. Найдем стоимость опциона колл с помощью риск-нейтральных вероятностей в одношаговой биномиальной модели. Рассчитаем мартингальные вероятности:
+
+\begin{equation*}
+	q_u = \frac{(1+R) - d}{u-d} = 0.5(6)
+\end{equation*}
+тогда
+\begin{equation*}
+	q_d = \frac{u - (1+R)}{u-d} = 0.4(3)
+\end{equation*}
+
+Соответствующая стоимость опциона колл будет равна:
+\begin{equation*}
+	D_0 = \frac{1}{1+R} \Big( q_u \Phi(u) + q_d \Phi(d) \Big) = 1.68
+\end{equation*}
+
+\subsection*{Задача 5 (бонусная)}
+\begin{formal}
+Найти реплицирующую стратегию и оценить стоимость европейского платежного обязательства в биномиальной модели. Выплата по такому обязательству основывается только на состоянии рынка на момент даты экспирации, — таким образом, в одношаговой биномиальной модели реализация платежа по обязательству будет происходить в момент времени $t = 1$, а его размер будет зависеть от того, в какую сторону ``сходит'' рынок, задаваясь, таким образом, величинами $H^u$ и $H^d$.
+\end{formal}
+\textbf{\large Решение:}
+
+Обозначим стоимость европейского платежного обязательства за $H$. Тогда в условиях полного рынка стоимость опциона в момент $t=0$ можно записать
+\begin{equation*}
+	H = \alpha B_0 + \beta S_0
+\end{equation*}
+
+В момент времени $t=1$ стоимость опциона составит
+\begin{equation*}
+	\begin{cases}
+		\alpha(1+R) + \beta S_0 u = H^u\\
+		\alpha(1+R) + \beta S_0 d = H^d
+	\end{cases}
+\end{equation*}
+
+Домножив первое равенство на $d$, второе на $u$, после вычитаняи одного из другого получаем
+\begin{equation*}
+	\alpha = \frac{1}{1+R} \frac{u H^d-d H^u}{u-d}
+\end{equation*}
+\begin{equation*}
+	\beta = \frac{1}{S_0} \frac{H^u-H^d}{u-d}
+\end{equation*}
+
+Отсюда получаем стоимость опциона колл в момент времени $t=0$:
+\begin{equation*}
+	H_0(\phi) = \alpha B_0 + \beta S_0 = \frac{1}{1+R} \bigg( \frac{(1+R) - d}{u-d} H^u + \frac{u - (1+R)}{u-d} H^d \bigg) = \frac{1}{1+R} E^Q \bigg[\frac{H}{1+R}\bigg]
+\end{equation*}
+
+
+\end{document}
