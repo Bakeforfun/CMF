@@ -1,0 +1,21 @@
+H. White A Heteroskedasticity-Consistent Covariance-Matrix Estimator and a Direct Test for Heteroskedasticity 1980 Econometrica
+
+W.K. Newey, K.D. West A Simple, Positive Semidefinite, Heteroskedasticity and Autocorrelation Consistent Covariance Matrix 1987 Econometrica
+
+D.B. Nelson Stationarity and Persistence in the GARCH(1,1) Model 1990 Econometric Theory
+
+T. Bollerslev Modeling the Coherence in Short-Run Nominal Exchange-Rates - A Multivariate Generalized ARCH Model 1990 - Review of Economics and Statistics
+
+D.B. Nelson Conditional Heteroskedasticity in Asset Returns - A New Approach 1991 Econometrica
+
+T. Bollerslev, R.Y. Chou, K.F. Kroner ARCH Modeling in Finance - A Review of the Theory and Empirical-Evidence  1992 Journal of Econometrics
+
+S.W. Lee, B.E. Hansen Asymptotic Theory for the GARCH(1,1) Quasi-Maximum Likelihood Estimator 1994 Econometric Theory
+
+E. Jacquier, N.G. Polson, P.E. Rossi Bayesian-Analysis of Stochastic Volatility Models 1994 Journal of Business & Economic Statistics
+
+E. Masry, D. Tjostheim Nonparametric-Estimation and Identification Of Nonlinear ARCH Time-Series - Strong-Convergence and Asymptotic Normality 1995 Econometric Theory
+
+R.F. Engle, K.F. Kroner Multivariate Simultaneous Generalized ARCH 1995 Econometric Theory
+
+S.Q. Ling, M. McAleer Asymptotic Theory for a Vector ARMA-GARCH Model 2003 Econometric Theory

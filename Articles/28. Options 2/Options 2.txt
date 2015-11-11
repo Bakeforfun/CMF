@@ -1,0 +1,9 @@
+Boyle, Phelim P. "Options: A monte carlo approach." Journal of financial economics 4.3 (1977): 323-338.
+
+Black, F., 1992, "The Holes in Black Scholes" in From Black Scholes to Black Holes:New Frontiers in Options, Risk Magazine
+
+Leland, H.E., 1996, "Options and Expectations", Journal of Portfolio Management Special Issue, pp.43-51
+
+Bakshi, G Cao, C and Z Chen, 1997, "Empirical performance of alternative option pricing models", Journal of Finance, 52 (5), pp. 2003-49
+
+Babsiri, M and G. Noel, 1998, "Simulating path dependent options: a new approach", Journal of Derivatives, winter, pp 65-83

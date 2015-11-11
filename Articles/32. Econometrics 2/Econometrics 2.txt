@@ -1,0 +1,63 @@
+S.S. Shapiro, M.B. Wilk An Analysis of Variance Test for Normality (Complete Samples) 1965 Biometrika
+
+W.K. Hastings Monte-Carlo Sampling Methods Using Markov Chains and their Applications 1970 Biometrika
+
+D.B. Rubin Inference and Missing Data 1976 Biometrika
+
+R. Koenker, G. Bassett Regression Quantiles 1978 Econometrica
+
+J.A. Hausman Specification Tests in Econometrics 1978 Econometrica
+
+B. Efron 1977 Rietz Lecture - Bootstrap Methods - Another Look at the Jackknife 1979 Annals of Statistics
+
+J.J. Heckman Sample Selection Bias as a Specification Error 1979 Econometrica
+
+D.A. Dickey, W.A. Fuller Distribution of The Estimators for Autoregressive Time-Series with a Unit Root 1979 Journal of the American Statistical Association
+
+C.W.J. Granger Some Properties of Time-Series Data and their use in Econometric-Model Specification 1981 Journal of Econometrics
+
+D.A. Dickey, W.A. Fuller Likelihood Ratio Statistics for Autoregressive Time-Series with a UnitRoot 1981 Econometrica
+
+H. White Maximum-Likelihood Estimation of Mis-Specified Models 1982  Econometrica
+
+L.P. Hansen Large Sample Properties of Generalized Method of Moments Estimators 1982 Econometrica
+
+C.F.J. Wu On the Convergence Properties of the EM Algorithm 1983 Annals of Statistics
+
+P.C.B. Phillips Understanding Spurious Regressions in 1986 Journal of Econometrics
+
+Z. Griliches, J.A. Hausman Errors in Variables in Panel Data 1986 Journal of Econometrics
+
+R.F. Engle, B.S. Yoo Forecasting and Testing in Co-Integrated Systems 1987 Journal of Econometrics
+
+C.W.J. Granger Some Recent Developments in a Concept of Causality 1988 Journal of Econometrics
+
+P.C.B. Phillips, P. Perron Testing For a Unit-Root in Time-Series Regression 1988 Biometrica
+
+P. Perron The Great Crash, The Oil Price Shock, and the Unit-Root Hypothesis 1989 Econometrica
+
+J.D. Hamilton A New Approach to the Economic Analysis of Nonstationary Time-Series and the Business-Cycle 1989 Econometrica
+
+G.W. Schwert Tests for Unit Roots - A Monte-Carlo Investigation 1989 Journal of Business & Economic Statistics
+
+J.M. Wooldridge A Unified Approach to Robust, Regression-Based Specification Tests 1990 Econometric Theory
+
+P. Perron Testing for a Unit-Root in a TimeSeries with a Changing Mean 1990 Journal of Business & Economic Statistics
+
+S. Hylleberg, R.F. Engle, C.W.J. Granger, B.S. Yoo Seasonal Integration and Cointegration 1990 Journal of Econometrics
+
+J.H. Friedman Multivariate Adaptive Regression Splines 1991 Annals of Statistics
+
+S. Johansen Estimation and Hypothesis-Testing of Cointegration Vectors in Gaussian Vector Autoregressive Models 1991 Econometrica
+
+D. Kwiatkowski, P.C.B. Phillips, P. Schmidt, Y.C. Shin Testing The Null Hypothesis of Stationarity Against The Alternative of a Unit-Root - How Sure are we that Economic Time-Series have a Unit-Root 1992 Journal of Econometrics
+
+M.H. Pesaran, R. Smith Estimating Long-Run Relationships from Dynamic Heterogeneous Panels 1995 Journal of Econometrics
+
+S. Chib, E. Greenberg Markov Chain Monte Carlo Simulation Methods in Econometrics 1996 Econometric Theory
+
+R. Blundell, S. Bonds Initial Conditions and Moment Restrictions in Dynamic Panel Data Models 1998 Journal of Econometrics
+
+A. Levin, C.F. Lin, C.S.J. Chu Unit Root Tests in Panel Data: Asymptotic and Finite-Sample Properties 2002 Journal of Econometrics
+
+K.S. Im, M.H. Pesaran, Y. Shin Testing for Unit Roots in Heterogeneous Panels 2003 Journal of Econometrics

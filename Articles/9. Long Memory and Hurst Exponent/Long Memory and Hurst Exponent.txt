@@ -1,0 +1,7 @@
+Hurst, H.E.(1951). "Long-Term Storage Capacity of Reservoirs," Transactions of the American Society of Civil Engineers, 116, 770-799.
+
+Mandelbrot, B.B.(1971). "When Can Price be Arbitraged Efficiently? A Limit to the Validity of the Random Walk and Martingale Models," Review of Economics and Statistics, 53, 3, 225-236.
+
+Mandelbrot, B.B.(1972). "Statistical Methodology for Nonperiodic Cycles from Covariance to R/S Analysis," Annals of Economic and Social Measurement, 1, 259-290.
+
+Lo, A.W.(1991). "Long-Term Memory in Stock Market Prices," Econometrica, 59, 5, 1279-1313.

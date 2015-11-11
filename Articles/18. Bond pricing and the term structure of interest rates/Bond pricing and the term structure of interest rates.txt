@@ -1,0 +1,5 @@
+Heath, D., Jarrow, R. and Morton, A. (1990). Bond Pricing and the Term Structure of Interest Rates: A Discrete Time Approximation. Journal of Financial and Quantitative Analysis, 25:419-440.
+
+Heath, D., Jarrow, R. and Morton, A. (1991). Contingent Claims Valuation with a Random Evolution of Interest Rates. Review of Futures Markets, 9:54-76.
+
+Heath, D., Jarrow, R. and Morton, A. (1992). Bond Pricing and the Term Structure of Interest Rates: A New Methodology for Contingent Claims Valuation. Econometrica, 60(1):77-105

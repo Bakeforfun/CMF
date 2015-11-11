@@ -1,0 +1,3 @@
+E. Fournie, J.M. Lasry, J. Lebuchoux, P.L. Lions and N. Touzi, An application of Malliavin calculus to Monte Carlo methods in finance, (1999)
+
+E. Fournie, J.M Lasry, J. Lebuchoux and P.L. Lions, Applications of Malliavin Calculus to Monte Carlo Methods in Finance II, (2001)

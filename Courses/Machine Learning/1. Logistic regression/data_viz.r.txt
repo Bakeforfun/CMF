@@ -1,0 +1,29 @@
+head(iris)
+
+library(ggplot2)
+
+qplot(iris$Sepal.Length, iris$Sepal.Width, color = iris$Species, lwd = 5)
+qplot(iris$Petal.Length, iris$Petal.Width, color = iris$Species, lwd = 5)
+
+pairs(iris, pch = 16)
+
+
+panel.cor <- function(x, y, digits = 2, cex.cor, ...)
+{
+  usr <- par("usr"); on.exit(par(usr))
+  par(usr = c(0, 1, 0, 1))
+  # correlation coefficient
+  r <- cor(x, y)
+  txt <- format(c(r, 0.123456789), digits = digits)[1]
+  txt <- paste("cor = ", txt, sep = "")
+  text(0.5, 0.6, txt, cex = 1.5)
+
+  # p-value calculation
+  p <- cor.test(x, y)$p.value
+  txt2 <- format(c(p, 0.123456789), digits = digits)[1]
+  txt2 <- paste("p.val = ", txt2, sep = "")
+  if(p<0.01) txt2 <- paste("p.val ", "< 0.01", sep = "")
+  text(0.5, 0.4, txt2, cex = 1.5)
+}
+
+pairs(iris, upper.panel = panel.cor, pch = 16)

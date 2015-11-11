@@ -1,0 +1,24 @@
+1) Foundations of Technical Analysis: Computational Algorithms, Statistical Inference, and Empirical Implementation
+http://www.cis.upenn.edu/~mkearns/teaching/cis700/lo.pdf
+2) Credit rating analysis with support vector machines and neural networks: a market comparative study
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.60.6520&rep=rep1&type=pdf
+3) Genetic algorithms applications in the analysis of insolvency risk
+http://www.researchgate.net/profile/Franco_Varetto/publication/223526635_Genetic_algorithms_applications_in_the_analysis_of_insolvency_risk/links/00b4953709ca668aa3000000.pdf
+4) Artificial Neural Networks in Accounting and Finance: Modeling Issues
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.390.5863&rep=rep1&type=pdf
+5) Using neural network ensembles for bankruptcy prediction and credit scoring
+http://web.info.uvt.ro/~dzaharie/cne2012/proiecte/aplicatii/credit_scoring/NN%2BcreditScoring3.pdf
+6) Forecasting stock market movement direction with support vector machine
+http://svms.org/finance/HuangNakamoriWang2005.pdf
+7) Bankruptcy prediction using support vector machine with optimal choice of kernel function parameters
+http://www.researchgate.net/profile/Young-Chan_Lee/publication/222580945_Bankruptcy_prediction_using_support_vector_machine_with_optimal_choice_of_kernel_function_parameters/links/02e7e52bac4f202c28000000.pdf
+8) Characteristic-Based Clustering for Time Series Data
+http://www.researchgate.net/profile/Rob_Hyndman/publication/220451959_Characteristic-Based_Clustering_for_Time_Series_Data/links/0912f50f5ec12b3f4d000000.pdf
+9) Mining Sequential Patterns from Multidimensional Sequence Data
+http://mail.im.tku.edu.tw/~bossanova/paper/Mining%20sequential%20patterns%20from%20multidimensional%20sequence%20data.pdf
+10) Learning with Drift Detection
+http://www.researchgate.net/profile/Joao_Gama3/publication/220974771_Learning_with_Drift_Detection/links/0912f50ace71293aed000000.pdf
+11) Sentiment Polarity Identification in Financial News: A Cohesion-based Approach
+http://edepositireland.ie/bitstream/handle/2262/25729/DevittAhmad_acl2007final.pdf?sequence=1&isAllowed=y
+12) The adaptive selection of financial and economic variables for use with artificial neural networks
+http://www.researchgate.net/profile/David_Enke/publication/222530096_The_adaptive_selection_of_financial_and_economic_variables_for_use_with_artificial_neural_networks/links/0a85e52ebb2b60dc86000000.pdf
