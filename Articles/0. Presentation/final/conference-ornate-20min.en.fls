@@ -1,0 +1,315 @@
+PWD C:/Users/Internet/Documents/CMF/Articles/0. Presentation/final
+INPUT C:/Users/Internet/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt
+INPUT C:/Users/Internet/Documents/CMF/Articles/0. Presentation/final/conference-ornate-20min.en.tex
+OUTPUT C:/Users/Internet/Documents/CMF/Articles/0. Presentation/final/conference-ornate-20min.en.log
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamer.cls
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamer.cls
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasercs.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasercs.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasemodes.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasemodes.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasedecode.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasedecode.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbaseoptions.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbaseoptions.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/keyval.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/keyval.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/geometry/geometry.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/geometry/geometry.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifvtex.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifvtex.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/ifxetex/ifxetex.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/ifxetex/ifxetex.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/geometry/geometry.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/geometry/geometry.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/size11.clo
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/size11.clo
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/pgf/basiclayer/pgfcore.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/pgf/basiclayer/pgfcore.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphicx.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphicx.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphics.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphics.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/trig.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/trig.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/00miktex/graphics.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/00miktex/graphics.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/pdftex-def/pdftex.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/pdftex-def/pdftex.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/infwarerr.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/infwarerr.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ltxcmds.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ltxcmds.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/pgf/systemlayer/pgfsys.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/pgf/systemlayer/pgfsys.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/pgf/utilities/pgfrcs.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/pgf/utilities/pgfrcs.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/utilities/pgfutil-common.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/utilities/pgfutil-common-lists.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/utilities/pgfutil-latex.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/ms/everyshi.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/ms/everyshi.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/utilities/pgfrcs.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/utilities/pgfrcs.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/systemlayer/pgfsys.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/systemlayer/pgfsys.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/utilities/pgfkeys.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/systemlayer/pgf.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/00miktex/color.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/00miktex/color.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/basiclayer/pgfcore.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/basiclayer/pgfcore.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/math/pgfmath.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/math/pgfmathcalc.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/math/pgfmathutil.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/math/pgfmathparser.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/math/pgfmathfunctions.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/math/pgfmathfunctions.random.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/math/pgfmathfunctions.round.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/math/pgfmathfloat.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/pgf/utilities/xxcolor.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/pgf/utilities/xxcolor.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/atbegshi.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/atbegshi.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/hyperref.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/hyperref.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/hobsub-generic.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/hobsub-generic.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/auxhook.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/auxhook.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/kvoptions.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/kvoptions.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/pd1enc.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/pd1enc.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/00miktex/hyperref.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/00miktex/hyperref.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/url/url.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/url/url.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/hpdftex.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/hpdftex.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbaserequires.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbaserequires.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasecompatibility.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasecompatibility.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasefont.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasefont.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/amssymb.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/amssymb.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/amsfonts.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/amsfonts.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/sansmathaccent/sansmathaccent.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/sansmathaccent/sansmathaccent.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/sansmathaccent/sansmathaccent.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/filehook/filehook.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/filehook/filehook.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/filehook/filehook.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasetranslator.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasetranslator.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/translator/translator.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/translator/translator.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/translator/translator-language-mappings.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/translator/translator-language-mappings.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasemisc.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasemisc.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasetwoscreens.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasetwoscreens.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbaseoverlay.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbaseoverlay.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasetitle.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasetitle.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasesection.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasesection.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbaseframe.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbaseframe.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbaseverbatim.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbaseverbatim.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbaseframesize.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbaseframesize.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbaseframecomponents.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbaseframecomponents.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasecolor.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasecolor.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasenotes.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasenotes.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasetoc.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasetoc.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasetemplates.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasetemplates.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbaseauxtemplates.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbaseauxtemplates.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbaseboxes.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbaseboxes.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbaselocalstructure.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbaselocalstructure.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/enumerate.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/enumerate.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasenavigation.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasenavigation.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasetheorems.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasetheorems.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsmath.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsmath.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amstext.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amstext.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsgen.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsgen.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsbsy.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsbsy.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsopn.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsopn.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amscls/amsthm.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amscls/amsthm.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasethemes.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/beamerbasethemes.sty
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmss10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/themes/theme/beamerthemedefault.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/themes/theme/beamerthemedefault.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/themes/font/beamerfontthemedefault.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/themes/font/beamerfontthemedefault.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/themes/color/beamercolorthemedefault.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/themes/color/beamercolorthemedefault.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/themes/inner/beamerinnerthemedefault.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/themes/inner/beamerinnerthemedefault.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/art/beamericonbook.pdf
+OUTPUT C:/Users/Internet/Documents/CMF/Articles/0. Presentation/final/conference-ornate-20min.en.pdf
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/art/beamericonbook.pdf
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/art/beamericonbook.20.pdf
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/art/beamericonbook.20.pdf
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/art/beamericonarticle.pdf
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/art/beamericonarticle.pdf
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/art/beamericonarticle.20.pdf
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/art/beamericonarticle.20.pdf
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/art/beamericononline.pdf
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/art/beamericononline.pdf
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/art/beamericononline.20.pdf
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/art/beamericononline.20.pdf
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/themes/outer/beamerouterthemedefault.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/themes/outer/beamerouterthemedefault.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/themes/theme/beamerthemeWarsaw.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/themes/theme/beamerthemeWarsaw.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/themes/inner/beamerinnerthemerounded.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/themes/inner/beamerinnerthemerounded.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/themes/outer/beamerouterthemeshadow.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/themes/outer/beamerouterthemeshadow.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/themes/outer/beamerouterthemesplit.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/themes/outer/beamerouterthemesplit.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/themes/color/beamercolorthemeorchid.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/themes/color/beamercolorthemeorchid.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/themes/color/beamercolorthemewhale.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/themes/color/beamercolorthemewhale.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/fontenc.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/fontenc.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/cyrillic/t2aenc.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/cyrillic/t2aenc.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/cyrillic/t2acmss.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/cyrillic/t2acmss.fd
+INPUT C:/Users/Internet/AppData/Local/MiKTeX/2.9/fonts/tfm/lh/lh-t2a/lass1095.tfm
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/inputenc.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/inputenc.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/cyrillic/cp1251.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/cyrillic/cp1251.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/babel/babel.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/babel/babel.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/00miktex/bblopts.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/00miktex/bblopts.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/babel-russian/russianb.ldf
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/babel-russian/russianb.ldf
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/babel/babel.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/babel-english/english.ldf
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/babel-english/english.ldf
+INPUT conference-ornate-20min.en.aux
+INPUT conference-ornate-20min.en.aux
+OUTPUT C:/Users/Internet/Documents/CMF/Articles/0. Presentation/final/conference-ornate-20min.en.aux
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/cyrillic/t2acmr.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/cyrillic/t2acmr.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/context/base/supp-pdf.mkii
+INPUT C:/Program Files/MiKTeX 2.9/tex/context/base/supp-pdf.mkii
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/nameref.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/nameref.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/gettitlestring.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/gettitlestring.sty
+INPUT conference-ornate-20min.en.out
+INPUT conference-ornate-20min.en.out
+INPUT conference-ornate-20min.en.out
+INPUT conference-ornate-20min.en.out
+OUTPUT C:/Users/Internet/Documents/CMF/Articles/0. Presentation/final/conference-ornate-20min.en.out
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/translator/dicts/translator-bibliography-dictionary/translator-bibliography-dictionary-English.dict
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/translator/dicts/translator-bibliography-dictionary/translator-bibliography-dictionary-English.dict
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/translator/dicts/translator-environment-dictionary/translator-environment-dictionary-English.dict
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/translator/dicts/translator-environment-dictionary/translator-environment-dictionary-English.dict
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/translator/dicts/translator-months-dictionary/translator-months-dictionary-English.dict
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/translator/dicts/translator-months-dictionary/translator-months-dictionary-English.dict
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/translator/dicts/translator-numbers-dictionary/translator-numbers-dictionary-English.dict
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/translator/dicts/translator-numbers-dictionary/translator-numbers-dictionary-English.dict
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/translator/dicts/translator-theorem-dictionary/translator-theorem-dictionary-English.dict
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/translator/dicts/translator-theorem-dictionary/translator-theorem-dictionary-English.dict
+INPUT conference-ornate-20min.en.nav
+INPUT conference-ornate-20min.en.nav
+INPUT C:/Users/Internet/AppData/Local/MiKTeX/2.9/fonts/tfm/lh/lh-t2a/lass0600.tfm
+INPUT C:/Users/Internet/AppData/Local/MiKTeX/2.9/fonts/tfm/lh/lh-t2a/lass1440.tfm
+INPUT C:/Users/Internet/AppData/Local/MiKTeX/2.9/fonts/tfm/lh/lh-t2a/lass0800.tfm
+INPUT C:/Users/Internet/AppData/Local/MiKTeX/2.9/fonts/tfm/lh/lh-t2a/lass0500.tfm
+INPUT C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map
+INPUT conference-ornate-20min.en.toc
+INPUT conference-ornate-20min.en.toc
+INPUT C:/Users/Internet/AppData/Local/MiKTeX/2.9/fonts/tfm/lh/lh-t2a/lass1000.tfm
+INPUT C:/Users/Internet/AppData/Local/MiKTeX/2.9/fonts/tfm/lh/lh-t2a/lasi1095.tfm
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/cyrillic/t2acmtt.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/cyrillic/t2acmtt.fd
+INPUT C:/Users/Internet/AppData/Local/MiKTeX/2.9/fonts/tfm/lh/lh-t2a/latt1095.tfm
+INPUT C:/Users/Internet/AppData/Local/MiKTeX/2.9/fonts/tfm/lh/lh-t2a/lass0900.tfm
+OUTPUT C:/Users/Internet/Documents/CMF/Articles/0. Presentation/final/conference-ornate-20min.en.nav
+OUTPUT C:/Users/Internet/Documents/CMF/Articles/0. Presentation/final/conference-ornate-20min.en.toc
+OUTPUT C:/Users/Internet/Documents/CMF/Articles/0. Presentation/final/conference-ornate-20min.en.snm
+INPUT conference-ornate-20min.en.aux
+INPUT C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t2a.enc
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfsi1095.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfss0600.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfss0800.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfss0900.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfss1000.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfss1095.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfss1440.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1095.pfb

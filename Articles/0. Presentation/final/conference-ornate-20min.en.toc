@@ -1,0 +1,10 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@sectionintoc {1}{\IeC {\CYRV }\IeC {\cyrv }\IeC {\cyre }\IeC {\cyrd }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{3}{0}{1}
+\beamer@sectionintoc {2}{Literature review}{4}{0}{2}
+\beamer@sectionintoc {3}{Motivation}{6}{0}{3}
+\beamer@subsectionintoc {3}{1}{The Basic Problem That We Studied}{6}{0}{3}
+\beamer@subsectionintoc {3}{2}{Previous Work}{13}{0}{3}
+\beamer@sectionintoc {4}{Our Results/Contribution}{15}{0}{4}
+\beamer@subsectionintoc {4}{1}{Main Results}{15}{0}{4}
+\beamer@subsectionintoc {4}{2}{Basic Ideas for Proofs/Implementation}{18}{0}{4}
