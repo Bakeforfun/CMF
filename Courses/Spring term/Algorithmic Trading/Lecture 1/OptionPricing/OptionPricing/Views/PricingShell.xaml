@@ -1,0 +1,246 @@
+﻿<!-- (c) Konstantin Brownstein 2016 -->
+<Window x:Class="OptionPricing.Views.PricingShell"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OptionPricing.Views"
+        xmlns:viewModels="clr-namespace:OptionPricing.ViewModels"
+        xmlns:converters="clr-namespace:OptionPricing.Converters"
+        mc:Ignorable="d"
+        Title="Option Pricing Model" Height="600" Width="800">
+    <Window.DataContext>
+        <viewModels:PricingShellViewModel />
+    </Window.DataContext>
+    <Window.Resources>
+        <converters:InverseBool x:Key="InverseBool" />
+
+        <Style TargetType="StackPanel">
+            <Setter Property="Margin" Value="5" />
+        </Style>
+        <Style TargetType="DockPanel">
+            <Setter Property="Margin" Value="5" />
+
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="Header">
+            <Setter Property="FontWeight" Value="DemiBold" />
+        </Style>
+
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" MinWidth="200" MaxWidth="300" />
+            <ColumnDefinition Width="*" MinWidth="200" MaxWidth="300" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                <TextBlock Text="OPTION PARAMETERS" Style="{StaticResource Header}" />
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="0">
+                <TextBlock Text="Underlying:" />
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="1">
+                <TextBox Text="{Binding Underlying}" />
+            </StackPanel>
+            <StackPanel Grid.Row="2" Grid.Column="0">
+                <TextBlock Text="Underlying Price:" />
+            </StackPanel>
+            <StackPanel Grid.Row="2" Grid.Column="1">
+                <TextBox Text="{Binding UnderlyingPrice}" />
+            </StackPanel>
+            <StackPanel Grid.Row="3" Grid.Column="0">
+                <TextBlock Text="Style:" />
+            </StackPanel>
+            <StackPanel Grid.Row="3" Grid.Column="1">
+                <ComboBox ItemsSource="{Binding OptionStyles}" SelectedItem="{Binding SelectedStyle}" />
+            </StackPanel>
+            <StackPanel Grid.Row="4" Grid.Column="0">
+                <TextBlock Text="Exercise:" />
+            </StackPanel>
+            <StackPanel Grid.Row="4" Grid.Column="1">
+                <ComboBox ItemsSource="{Binding OptionExerciseTypes}" SelectedItem="{Binding SelectedExerciseType}" />
+            </StackPanel>
+            <StackPanel Grid.Row="5" Grid.Column="0">
+                <TextBlock Text="Call/Put:" />
+            </StackPanel>
+            <StackPanel Grid.Row="5" Grid.Column="1">
+                <ComboBox ItemsSource="{Binding OptionTypes}" SelectedItem="{Binding SelectedType}" />
+            </StackPanel>
+            <StackPanel Grid.Row="6" Grid.Column="0">
+                <TextBlock Text="Direction:" />
+            </StackPanel>
+            <StackPanel Grid.Row="6" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <RadioButton IsChecked="{Binding IsBuy}" Content="Buy" GroupName="BuySell" Margin="0,0,10,0" />
+                <RadioButton IsChecked="{Binding IsBuy, Converter={StaticResource InverseBool}}" Content="Sell"
+                             GroupName="BuySell" />
+            </StackPanel>
+            <StackPanel Grid.Row="7" Grid.Column="0">
+                <TextBlock Text="Strike:" />
+            </StackPanel>
+            <StackPanel Grid.Row="7" Grid.Column="1">
+                <TextBox Text="{Binding StrikePrice}" />
+            </StackPanel>
+            <StackPanel Grid.Row="8" Grid.Column="0">
+                <TextBlock Text="Strike (%):" />
+            </StackPanel>
+            <StackPanel Grid.Row="8" Grid.Column="1">
+                <TextBlock Text="{Binding StrikePricePct}" />
+            </StackPanel>
+            <StackPanel Grid.Row="9" Grid.Column="0">
+                <TextBlock Text="Quantity:" />
+            </StackPanel>
+            <StackPanel Grid.Row="9" Grid.Column="1">
+                <TextBox Text="{Binding Quantity}" />
+            </StackPanel>
+            <StackPanel Grid.Row="10" Grid.Column="0">
+                <TextBlock Text="Valuation date:" />
+            </StackPanel>
+            <StackPanel Grid.Row="10" Grid.Column="1">
+                <DatePicker SelectedDate="{Binding ValuationDate}" />
+            </StackPanel>
+            <StackPanel Grid.Row="11" Grid.Column="0">
+                <TextBlock Text="Expiry:" />
+            </StackPanel>
+            <StackPanel Grid.Row="11" Grid.Column="1">
+                <DatePicker SelectedDate="{Binding ExpirationDate}" />
+            </StackPanel>
+            <StackPanel Grid.Row="12" Grid.Column="0">
+                <TextBlock Text="Time to expiry:" />
+            </StackPanel>
+            <StackPanel Grid.Row="12" Grid.Column="1">
+                <TextBlock Text="{Binding TimeToExpiry}" />
+            </StackPanel>
+            <StackPanel Grid.Row="13" Grid.Column="0">
+                <TextBlock Text="Model:" />
+            </StackPanel>
+            <StackPanel Grid.Row="13" Grid.Column="1">
+                <ComboBox ItemsSource="{Binding PricingModels}" SelectedItem="{Binding SelectedPricingModel}" />
+            </StackPanel>
+
+            <StackPanel Grid.Row="14" Grid.Column="0">
+                <TextBlock Text="Volatility:" />
+            </StackPanel>
+            <StackPanel Grid.Row="14" Grid.Column="1">
+                <TextBox Text="{Binding Volatility}" />
+            </StackPanel>
+
+            <StackPanel Grid.Row="15" Grid.Column="0">
+                <TextBlock Text="Int.Rate:" />
+            </StackPanel>
+            <StackPanel Grid.Row="15" Grid.Column="1">
+                <TextBox Text="{Binding InterestRate}" />
+            </StackPanel>
+            <StackPanel Grid.Row="16" Grid.Column="0" Grid.ColumnSpan="2">
+                <Button Content="Compute" Command="{Binding ComputeCommand}" />
+            </StackPanel>
+
+            <StackPanel Grid.Row="17" Grid.Column="0" Grid.ColumnSpan="2">
+                <Button Content="Add to portfolio" Command="{Binding AddCommand}" />
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0">
+                <TextBlock Text="COMPUTED PARAMETERS" Style="{StaticResource Header}" />
+            </StackPanel>
+            <DockPanel Grid.Row="1" Grid.Column="0">
+                <DataGrid ItemsSource="{Binding Results}" />
+            </DockPanel>
+
+
+        </Grid>
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0">
+                <TextBlock Text="OPTIONS PORTFOLIO" Style="{StaticResource Header}" />
+            </StackPanel>
+            <DockPanel Grid.Row="1" Grid.Column="0">
+                <DataGrid ItemsSource="{Binding OptionsPortfolio}" CanUserDeleteRows="True" />
+            </DockPanel>
+            <Grid Grid.Row="2" Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition MaxWidth="150" />
+                    <ColumnDefinition MaxWidth="150" />
+                    <ColumnDefinition MaxWidth="150" />
+                    <ColumnDefinition MaxWidth="150" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4">
+                    <TextBlock Text="PORTFOLIO GREEKS" Style="{StaticResource Header}" />
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="0">
+                    <TextBlock Text="Cash Delta : " />
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="1">
+                    <TextBlock Text="{Binding PortfolioCashDelta}" />
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="2">
+                    <TextBlock Text="Cash Gamma : " />
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="3">
+                    <TextBlock Text="{Binding PortfolioCashGamma}" />
+                </StackPanel>
+                <StackPanel Grid.Row="2" Grid.Column="0">
+                    <TextBlock Text="Cash Vega : " />
+                </StackPanel>
+                <StackPanel Grid.Row="2" Grid.Column="1">
+                    <TextBlock Text="{Binding PortfolioCashVega}" />
+                </StackPanel>
+                <StackPanel Grid.Row="2" Grid.Column="2">
+                    <TextBlock Text="Cash Theta : " />
+                </StackPanel>
+                <StackPanel Grid.Row="2" Grid.Column="3">
+                    <TextBlock Text="{Binding PortfolioCashTheta}" />
+                </StackPanel>
+                <StackPanel Grid.Row="3" Grid.Column="0">
+                    <TextBlock Text="Cash Rho : " />
+                </StackPanel>
+                <StackPanel Grid.Row="3" Grid.Column="1">
+                    <TextBlock Text="{Binding PortfolioCashRho}" />
+                </StackPanel>
+            </Grid>
+
+
+        </Grid>
+
+    </Grid>
+</Window>

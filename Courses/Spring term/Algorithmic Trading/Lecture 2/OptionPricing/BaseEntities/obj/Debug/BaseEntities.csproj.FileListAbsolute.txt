@@ -1,0 +1,10 @@
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\BaseEntities\bin\Debug\BaseEntities.dll
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\BaseEntities\bin\Debug\BaseEntities.pdb
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\BaseEntities\obj\Debug\BaseEntities.csprojResolveAssemblyReference.cache
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\BaseEntities\obj\Debug\BaseEntities.dll
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\BaseEntities\obj\Debug\BaseEntities.pdb
+C:\Users\konst\Dropbox\Lectures\L2\OptionPricing\BaseEntities\bin\Debug\BaseEntities.dll
+C:\Users\konst\Dropbox\Lectures\L2\OptionPricing\BaseEntities\bin\Debug\BaseEntities.pdb
+C:\Users\konst\Dropbox\Lectures\L2\OptionPricing\BaseEntities\obj\Debug\BaseEntities.csprojResolveAssemblyReference.cache
+C:\Users\konst\Dropbox\Lectures\L2\OptionPricing\BaseEntities\obj\Debug\BaseEntities.dll
+C:\Users\konst\Dropbox\Lectures\L2\OptionPricing\BaseEntities\obj\Debug\BaseEntities.pdb

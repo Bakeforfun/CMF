@@ -1,0 +1,7 @@
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricingModels\bin\Release\OptionPricingModels.dll
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricingModels\bin\Release\OptionPricingModels.pdb
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricingModels\bin\Release\BaseEntities.dll
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricingModels\bin\Release\BaseEntities.pdb
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricingModels\obj\Release\OptionPricingModels.csprojResolveAssemblyReference.cache
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricingModels\obj\Release\OptionPricingModels.dll
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricingModels\obj\Release\OptionPricingModels.pdb

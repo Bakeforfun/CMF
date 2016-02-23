@@ -1,0 +1,4 @@
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\BaseEntities\bin\Release\BaseEntities.dll
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\BaseEntities\bin\Release\BaseEntities.pdb
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\BaseEntities\obj\Release\BaseEntities.dll
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\BaseEntities\obj\Release\BaseEntities.pdb

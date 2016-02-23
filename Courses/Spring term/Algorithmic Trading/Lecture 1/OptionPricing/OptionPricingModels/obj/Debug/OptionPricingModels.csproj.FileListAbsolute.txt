@@ -1,0 +1,14 @@
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricingModels\bin\Debug\OptionPricingModels.dll
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricingModels\bin\Debug\OptionPricingModels.pdb
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricingModels\bin\Debug\BaseEntities.dll
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricingModels\bin\Debug\BaseEntities.pdb
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricingModels\obj\Debug\OptionPricingModels.csprojResolveAssemblyReference.cache
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricingModels\obj\Debug\OptionPricingModels.dll
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricingModels\obj\Debug\OptionPricingModels.pdb
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricingModels\bin\Debug\OptionPricingModels.dll
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricingModels\bin\Debug\OptionPricingModels.pdb
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricingModels\bin\Debug\BaseEntities.dll
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricingModels\bin\Debug\BaseEntities.pdb
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricingModels\obj\Debug\OptionPricingModels.csprojResolveAssemblyReference.cache
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricingModels\obj\Debug\OptionPricingModels.dll
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricingModels\obj\Debug\OptionPricingModels.pdb

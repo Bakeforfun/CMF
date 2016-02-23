@@ -1,0 +1,10 @@
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\BaseEntities\bin\Debug\BaseEntities.dll
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\BaseEntities\bin\Debug\BaseEntities.pdb
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\BaseEntities\obj\Debug\BaseEntities.csprojResolveAssemblyReference.cache
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\BaseEntities\obj\Debug\BaseEntities.dll
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\BaseEntities\obj\Debug\BaseEntities.pdb
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\BaseEntities\bin\Debug\BaseEntities.dll
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\BaseEntities\bin\Debug\BaseEntities.pdb
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\BaseEntities\obj\Debug\BaseEntities.csprojResolveAssemblyReference.cache
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\BaseEntities\obj\Debug\BaseEntities.dll
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\BaseEntities\obj\Debug\BaseEntities.pdb

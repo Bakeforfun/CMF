@@ -1,0 +1,87 @@
+﻿<Window x:Class="NaiveOptionMVVM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NaiveOptionMVVM"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.DataContext>
+        <local:ViewModel/>
+    </Window.DataContext>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="OptionType :"/>
+            <ComboBox Grid.Row="0" Grid.Column="1" ItemsSource="{Binding OptionTypes}" SelectedItem="{Binding Option.Type}"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="UnderlyingPrice:"/>
+            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Option.UnderlyingPrice, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="StrikePrice:"/>
+            <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Option.StrikePrice, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBlock Grid.Row="3" Grid.Column="0" Text="TimeToExpiration:"/>
+            <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Option.TimeToExpiration, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBlock Grid.Row="4" Grid.Column="0" Text="InterestRate:"/>
+            <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Option.InterestRate, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBlock Grid.Row="5" Grid.Column="0" Text="Volatility:"/>
+            <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Option.Volatility, UpdateSourceTrigger=PropertyChanged}"/>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Price:"/>
+            <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding Option.Price, StringFormat=N2}"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Delta:"/>
+            <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Option.Delta, StringFormat=N2}"/>
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="CashDelta:"/>
+            <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Option.CashDelta, StringFormat=N2}"/>
+            <TextBlock Grid.Row="3" Grid.Column="0" Text="Gamma:"/>
+            <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding Option.Gamma, StringFormat=N2}"/>
+            <TextBlock Grid.Row="4" Grid.Column="0" Text="CashGamma:"/>
+            <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding Option.CashGamma, StringFormat=N2}"/>
+            <TextBlock Grid.Row="5" Grid.Column="0" Text="Vega:"/>
+            <TextBlock Grid.Row="5" Grid.Column="1" Text="{Binding Option.Vega, StringFormat=N2}"/>
+            <TextBlock Grid.Row="6" Grid.Column="0" Text="CashVega:"/>
+            <TextBlock Grid.Row="6" Grid.Column="1" Text="{Binding Option.CashVega, StringFormat=N2}"/>
+            <TextBlock Grid.Row="7" Grid.Column="0" Text="Theta:"/>
+            <TextBlock Grid.Row="7" Grid.Column="1" Text="{Binding Option.Theta, StringFormat=N2}"/>
+            <TextBlock Grid.Row="8" Grid.Column="0" Text="CashTheta:"/>
+            <TextBlock Grid.Row="8" Grid.Column="1" Text="{Binding Option.CashTheta, StringFormat=N2}"/>
+            <TextBlock Grid.Row="9" Grid.Column="0" Text="Rho:"/>
+            <TextBlock Grid.Row="9" Grid.Column="1" Text="{Binding Option.Rho, StringFormat=N2}"/>
+            <TextBlock Grid.Row="10" Grid.Column="0" Text="CashRho:"/>
+            <TextBlock Grid.Row="10" Grid.Column="1" Text="{Binding Option.CashRho, StringFormat=N2}"/>
+        </Grid>
+    </Grid>
+</Window>

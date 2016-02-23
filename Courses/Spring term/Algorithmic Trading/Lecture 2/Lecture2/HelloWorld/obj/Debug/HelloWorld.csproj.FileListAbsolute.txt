@@ -1,0 +1,9 @@
+C:\Users\Konstantin\Dropbox\Lectures\L2\Lecture2\HelloWorld\bin\Debug\HelloWorld.exe.config
+C:\Users\Konstantin\Dropbox\Lectures\L2\Lecture2\HelloWorld\bin\Debug\HelloWorld.exe
+C:\Users\Konstantin\Dropbox\Lectures\L2\Lecture2\HelloWorld\bin\Debug\HelloWorld.pdb
+C:\Users\Konstantin\Dropbox\Lectures\L2\Lecture2\HelloWorld\obj\Debug\HelloWorld.csprojResolveAssemblyReference.cache
+C:\Users\Konstantin\Dropbox\Lectures\L2\Lecture2\HelloWorld\obj\Debug\HelloWorld.exe
+C:\Users\Konstantin\Dropbox\Lectures\L2\Lecture2\HelloWorld\obj\Debug\HelloWorld.pdb
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\Lecture2\HelloWorld\bin\Debug\HelloWorld.exe.config
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\Lecture2\HelloWorld\obj\Debug\HelloWorld.exe
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\Lecture2\HelloWorld\obj\Debug\HelloWorld.pdb

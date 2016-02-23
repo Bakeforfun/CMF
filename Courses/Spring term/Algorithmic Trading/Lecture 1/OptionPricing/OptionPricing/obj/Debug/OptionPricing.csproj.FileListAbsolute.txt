@@ -1,0 +1,38 @@
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\bin\Debug\OptionPricing.exe.config
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\bin\Debug\OptionPricing.exe
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\bin\Debug\OptionPricing.pdb
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Debug\OptionPricing.csprojResolveAssemblyReference.cache
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Debug\Views\PricingShell.g.cs
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Debug\App.g.cs
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Debug\OptionPricing_MarkupCompile.cache
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Debug\OptionPricing_MarkupCompile.lref
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Debug\Views\PricingShell.baml
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Debug\OptionPricing.g.resources
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Debug\OptionPricing.Properties.Resources.resources
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Debug\OptionPricing.csproj.GenerateResource.Cache
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Debug\OptionPricing.exe
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Debug\OptionPricing.pdb
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\bin\Debug\BaseEntities.dll
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\bin\Debug\OptionPricingModels.dll
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\bin\Debug\BaseEntities.pdb
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\bin\Debug\OptionPricingModels.pdb
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\bin\Debug\OptionPricing.exe.config
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\obj\Debug\OptionPricing.exe
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\obj\Debug\OptionPricing.pdb
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\bin\Debug\OptionPricing.exe
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\bin\Debug\OptionPricing.pdb
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\bin\Debug\BaseEntities.dll
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\bin\Debug\OptionPricingModels.dll
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\bin\Debug\BaseEntities.pdb
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\bin\Debug\OptionPricingModels.pdb
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\obj\Debug\OptionPricing.csprojResolveAssemblyReference.cache
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\obj\Debug\Views\PricingShell.g.cs
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\obj\Debug\App.g.cs
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\obj\Debug\GeneratedInternalTypeHelper.g.cs
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\obj\Debug\OptionPricing_MarkupCompile.cache
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\obj\Debug\OptionPricing_MarkupCompile.lref
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\obj\Debug\Views\PricingShell.baml
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\obj\Debug\OptionPricing.g.resources
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\obj\Debug\OptionPricing.Properties.Resources.resources
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\obj\Debug\OptionPricing.csproj.GenerateResource.Cache

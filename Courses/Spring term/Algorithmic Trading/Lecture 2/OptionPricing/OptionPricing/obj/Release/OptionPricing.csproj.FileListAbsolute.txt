@@ -1,0 +1,28 @@
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\bin\Release\OptionPricing.exe.config
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\bin\Release\OptionPricing.exe
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\bin\Release\OptionPricing.pdb
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\bin\Release\BaseEntities.dll
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\bin\Release\OptionPricingModels.dll
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\bin\Release\Syncfusion.Data.WPF.dll
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\bin\Release\Syncfusion.SfGrid.WPF.dll
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\bin\Release\Syncfusion.Shared.Wpf.dll
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\bin\Release\BaseEntities.pdb
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\bin\Release\OptionPricingModels.pdb
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\bin\Release\Syncfusion.Data.WPF.xml
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\bin\Release\Syncfusion.SfGrid.WPF.xml
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\bin\Release\Syncfusion.Shared.Wpf.xml
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Release\OptionPricing.csprojResolveAssemblyReference.cache
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Release\Views\PricingShell.g.cs
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Release\App.g.cs
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Release\OptionPricing_MarkupCompile.cache
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Release\OptionPricing_MarkupCompile.lref
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Release\Views\PricingShell.baml
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Release\OptionPricing.g.resources
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Release\OptionPricing.Properties.Resources.resources
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Release\OptionPricing.csproj.GenerateResource.Cache
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Release\OptionPricing.exe
+C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Release\OptionPricing.pdb
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\bin\Release\OptionPricing.exe.config
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\obj\Release\OptionPricing.exe
+\\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\obj\Release\OptionPricing.pdb

@@ -1,0 +1,5 @@
+C:\Users\Konstantin\Dropbox\Lectures\L2\Lecture2\NaiveOptionConsole\bin\Debug\NaiveOptionConsole.exe.config
+C:\Users\Konstantin\Dropbox\Lectures\L2\Lecture2\NaiveOptionConsole\bin\Debug\NaiveOptionConsole.exe
+C:\Users\Konstantin\Dropbox\Lectures\L2\Lecture2\NaiveOptionConsole\bin\Debug\NaiveOptionConsole.pdb
+C:\Users\Konstantin\Dropbox\Lectures\L2\Lecture2\NaiveOptionConsole\obj\Debug\NaiveOptionConsole.exe
+C:\Users\Konstantin\Dropbox\Lectures\L2\Lecture2\NaiveOptionConsole\obj\Debug\NaiveOptionConsole.pdb
