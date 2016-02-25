@@ -227,6 +227,17 @@ namespace OptionPricing.ViewModels {
             }
         }
 
+        public double DividendRate
+        {
+            get { return _currentOption.DividendRate; }
+            set
+            {
+                _currentOption.DividendRate = value;
+                OnPropertyChanged();
+                computeThis();
+            }
+        }
+
         public ICommand AddCommand => new DelegateCommand(addOption);
 
         public ObservableCollection<OptionPosition> OptionsPortfolio {
