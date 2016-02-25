@@ -5,3 +5,10 @@ C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricingModels\bin\Re
 C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricingModels\obj\Release\OptionPricingModels.csprojResolveAssemblyReference.cache
 C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricingModels\obj\Release\OptionPricingModels.dll
 C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricingModels\obj\Release\OptionPricingModels.pdb
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricingModels\bin\Release\OptionPricingModels.dll
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricingModels\bin\Release\OptionPricingModels.pdb
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricingModels\bin\Release\BaseEntities.dll
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricingModels\bin\Release\BaseEntities.pdb
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricingModels\obj\Release\OptionPricingModels.csprojResolveAssemblyReference.cache
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricingModels\obj\Release\OptionPricingModels.dll
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricingModels\obj\Release\OptionPricingModels.pdb

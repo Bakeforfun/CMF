@@ -7,3 +7,9 @@ C:\Users\Konstantin\Dropbox\Lectures\L2\Lecture2\HelloWorld\obj\Debug\HelloWorld
 \\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\Lecture2\HelloWorld\bin\Debug\HelloWorld.exe.config
 \\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\Lecture2\HelloWorld\obj\Debug\HelloWorld.exe
 \\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\Lecture2\HelloWorld\obj\Debug\HelloWorld.pdb
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\Lecture2\HelloWorld\bin\Debug\HelloWorld.exe.config
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\Lecture2\HelloWorld\obj\Debug\HelloWorld.exe
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\Lecture2\HelloWorld\obj\Debug\HelloWorld.pdb
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\Lecture2\HelloWorld\bin\Debug\HelloWorld.exe
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\Lecture2\HelloWorld\bin\Debug\HelloWorld.pdb
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\Lecture2\HelloWorld\obj\Debug\HelloWorld.csprojResolveAssemblyReference.cache

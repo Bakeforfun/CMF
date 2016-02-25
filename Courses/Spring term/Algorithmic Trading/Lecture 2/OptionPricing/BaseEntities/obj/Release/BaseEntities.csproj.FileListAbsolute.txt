@@ -2,3 +2,8 @@ C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\BaseEntities\bin\Release\B
 C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\BaseEntities\bin\Release\BaseEntities.pdb
 C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\BaseEntities\obj\Release\BaseEntities.dll
 C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\BaseEntities\obj\Release\BaseEntities.pdb
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\BaseEntities\bin\Release\BaseEntities.dll
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\BaseEntities\bin\Release\BaseEntities.pdb
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\BaseEntities\obj\Release\BaseEntities.csprojResolveAssemblyReference.cache
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\BaseEntities\obj\Release\BaseEntities.dll
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\BaseEntities\obj\Release\BaseEntities.pdb

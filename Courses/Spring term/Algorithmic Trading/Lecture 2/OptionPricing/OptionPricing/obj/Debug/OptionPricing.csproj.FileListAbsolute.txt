@@ -70,3 +70,25 @@ C:\Users\konst\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Debug\Views\P
 C:\Users\konst\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Debug\OptionPricing.g.resources
 C:\Users\konst\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Debug\OptionPricing.Properties.Resources.resources
 C:\Users\konst\Dropbox\Lectures\L2\OptionPricing\OptionPricing\obj\Debug\OptionPricing.csproj.GenerateResource.Cache
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\bin\Debug\OptionPricing.exe.config
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\obj\Debug\OptionPricing.exe
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\obj\Debug\OptionPricing.pdb
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\bin\Debug\OptionPricing.exe
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\bin\Debug\OptionPricing.pdb
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\bin\Debug\BaseEntities.dll
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\bin\Debug\OptionPricingModels.dll
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\bin\Debug\BaseEntities.pdb
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\bin\Debug\OptionPricingModels.pdb
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\bin\Debug\Syncfusion.Data.WPF.xml
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\bin\Debug\Syncfusion.SfGrid.WPF.xml
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\bin\Debug\Syncfusion.Shared.Wpf.xml
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\obj\Debug\OptionPricing.csprojResolveAssemblyReference.cache
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\obj\Debug\Views\PricingShell.g.cs
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\obj\Debug\App.g.cs
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\obj\Debug\OptionPricing_MarkupCompile.cache
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\obj\Debug\OptionPricing_MarkupCompile.lref
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\obj\Debug\Views\PricingShell.baml
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\obj\Debug\OptionPricing.g.resources
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\obj\Debug\OptionPricing.Properties.Resources.resources
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\obj\Debug\OptionPricing.csproj.GenerateResource.Cache
