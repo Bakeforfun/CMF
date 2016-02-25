@@ -228,7 +228,17 @@
                         PercentValue="{Binding InterestRate, Converter={StaticResource DoubleToPct}, UpdateSourceTrigger=PropertyChanged}"
                         PercentDecimalDigits="2" />
                 </StackPanel>
-                <StackPanel Grid.Row="16" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2">
+
+                <StackPanel Grid.Row="16" Grid.Column="0">
+                    <TextBlock Text="Div.Rate:" />
+                </StackPanel>
+                <StackPanel Grid.Row="16" Grid.Column="1">
+                    <sf:PercentTextBox
+                        PercentValue="{Binding DividendRate, Converter={StaticResource DoubleToPct}, UpdateSourceTrigger=PropertyChanged}"
+                        PercentDecimalDigits="2" />
+                </StackPanel>
+
+                <StackPanel Grid.Row="17" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2">
                     <Button Content="Add to portfolio" Command="{Binding AddCommand}" />
                 </StackPanel>
             </Grid>
