@@ -8,7 +8,7 @@ namespace OptionPricingModels.PricingModels {
     internal class BlackScholesModel : IOptionsPricingModel {
         public void Compute(OptionPosition option) {
             var t = option.TimeToExpiry.Days / 365.0;
-            var d1 = (Math.Log(option.UnderlyingPrice / option.Strike) + (option.InterestRate + option.Volatility * option.Volatility / 2) * t) / (option.Volatility * Math.Sqrt(t));
+            var d1 = (Math.Log(option.UnderlyingPrice / option.Strike) + (option.InterestRate - option.DividendRate + option.Volatility * option.Volatility / 2) * t) / (option.Volatility * Math.Sqrt(t));
             var d2 = d1 - option.Volatility * Math.Sqrt(t);
 
             var sign = option.Side == Side.Buy ? 1 : -1;
@@ -17,22 +17,24 @@ namespace OptionPricingModels.PricingModels {
             // so formulas for greeks are [sign * BSFormula]
 
             if (option.Type == OptionType.Call) {
-                option.OptionPrice = option.UnderlyingPrice * NormalDistribution.Phi(d1) - option.Strike * Math.Pow(Math.E, -option.InterestRate * t) * NormalDistribution.Phi(d2);
-                option.Delta = sign * NormalDistribution.Phi(d1);
-                option.Theta = sign * (-(option.UnderlyingPrice * NormalDistribution.Density(d1) * option.Volatility) / (2 * Math.Sqrt(t)) -
-                                option.InterestRate * option.Strike * Math.Pow(Math.E, -option.InterestRate * t) * NormalDistribution.Phi(d2));
+                option.OptionPrice = option.UnderlyingPrice * Math.Pow(Math.E, -option.DividendRate * t) * NormalDistribution.Phi(d1) -
+                                     option.Strike * Math.Pow(Math.E, -option.InterestRate * t) * NormalDistribution.Phi(d2);
+                option.Delta = sign * Math.Pow(Math.E, -option.DividendRate * t) * NormalDistribution.Phi(d1);
+                option.Theta = sign * (-(option.UnderlyingPrice * Math.Pow(Math.E, -option.DividendRate * t) * NormalDistribution.Density(d1) * option.Volatility) / (2 * Math.Sqrt(t)) -
+                               option.InterestRate * option.Strike * Math.Pow(Math.E, -option.InterestRate * t) * NormalDistribution.Phi(d2));
                 option.Rho = sign * option.Strike * t * Math.Pow(Math.E, -option.InterestRate * t) * NormalDistribution.Phi(d2);
             }
             else {
-                option.OptionPrice = -option.UnderlyingPrice * NormalDistribution.Phi(-d1) + option.Strike * Math.Pow(Math.E, -option.InterestRate * t) * NormalDistribution.Phi(-d2);
-                option.Delta = sign * (NormalDistribution.Phi(d1) - 1);
-                option.Theta = sign * (-(option.UnderlyingPrice * NormalDistribution.Density(d1) * option.Volatility) / (2 * Math.Sqrt(t)) +
+                option.OptionPrice = -option.UnderlyingPrice * Math.Pow(Math.E, -option.DividendRate * t) * NormalDistribution.Phi(-d1) +
+                                     option.Strike * Math.Pow(Math.E, -option.InterestRate * t) * NormalDistribution.Phi(-d2);
+                option.Delta = sign * Math.Pow(Math.E, -option.DividendRate * t) * (NormalDistribution.Phi(d1) - 1);
+                option.Theta = sign * (-(option.UnderlyingPrice * Math.Pow(Math.E, -option.DividendRate * t) * NormalDistribution.Density(d1) * option.Volatility) / (2 * Math.Sqrt(t)) +
                                 option.InterestRate * option.Strike * Math.Pow(Math.E, -option.InterestRate * t) * NormalDistribution.Phi(-d2));
                 option.Rho = sign * (-1) * option.Strike * t * Math.Pow(Math.E, -option.InterestRate * t) * NormalDistribution.Phi(-d2);
             }
 
-            option.Gamma = sign * NormalDistribution.Density(d1) / (option.UnderlyingPrice * option.Volatility * Math.Sqrt(t));
-            option.Vega = sign * option.UnderlyingPrice * Math.Sqrt(t) * NormalDistribution.Density(d1);
+            option.Gamma = sign * Math.Pow(Math.E, -option.DividendRate * t) * NormalDistribution.Density(d1) / (option.UnderlyingPrice * option.Volatility * Math.Sqrt(t));
+            option.Vega = sign * option.UnderlyingPrice * Math.Sqrt(t) * Math.Pow(Math.E, -option.DividendRate * t) * NormalDistribution.Density(d1);
         }
     }
 }

@@ -107,8 +107,7 @@ namespace OptionPricingModels {
             }
         }
 
-        public double DividendRate
-        {
+        public double DividendRate {
             get { return _dividendRate; }
             set
             {
