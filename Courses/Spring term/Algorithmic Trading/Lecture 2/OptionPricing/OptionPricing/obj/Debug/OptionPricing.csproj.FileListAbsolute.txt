@@ -79,9 +79,6 @@ C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 
 C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\bin\Debug\OptionPricingModels.dll
 C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\bin\Debug\BaseEntities.pdb
 C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\bin\Debug\OptionPricingModels.pdb
-C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\bin\Debug\Syncfusion.Data.WPF.xml
-C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\bin\Debug\Syncfusion.SfGrid.WPF.xml
-C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\bin\Debug\Syncfusion.Shared.Wpf.xml
 C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\obj\Debug\OptionPricing.csprojResolveAssemblyReference.cache
 C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\obj\Debug\Views\PricingShell.g.cs
 C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 2\OptionPricing\OptionPricing\obj\Debug\App.g.cs
