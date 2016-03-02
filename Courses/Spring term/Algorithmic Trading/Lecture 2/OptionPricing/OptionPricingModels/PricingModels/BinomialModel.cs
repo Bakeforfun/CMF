@@ -18,8 +18,9 @@ namespace OptionPricingModels.PricingModels {
             double r = option.InterestRate;
 
             OptionType type = option.Type;
+            OptionExerciseType exerciseType = option.ExerciseType;
 
-            double[,] lattice = createLattice(nSteps, dt, S, K, sigma, r, type);
+            double[,] lattice = createLattice(nSteps, dt, S, K, sigma, r, type, exerciseType);
 
             var sign = option.Side == Side.Buy ? 1 : -1;
 
@@ -36,31 +37,36 @@ namespace OptionPricingModels.PricingModels {
 
             option.Theta = sign * (lattice[2, 1] - lattice[0, 0]) / (2 * dt);
 
-            double priceDeltaVol = createLattice(nSteps, dt, S, K, (sigma + 0.001), r, type)[0, 0]; // option price with a higher volatily for vega calculation
-            option.Vega = sign * (priceDeltaVol - option.OptionPrice) / 0.001; // estimate option price sensitivity to volatility
 
-            double priceDeltaR = createLattice(nSteps, dt, S, K, sigma, (r + 0.001), type)[0, 0]; // option price with a higher rate for rho calculation
-            option.Rho = sign * (priceDeltaR - option.OptionPrice) / 0.001; // estimate option price sensitivity to percent rate
+            double delta = 0.001;
+            double priceDeltaVol = createLattice(nSteps, dt, S, K, (sigma + delta), r, type, exerciseType)[0, 0]; // option price with a higher volatily for vega calculation
+            option.Vega = sign * (priceDeltaVol - option.OptionPrice) / delta; // estimate option price sensitivity to volatility
+
+            double priceDeltaR = createLattice(nSteps, dt, S, K, sigma, (r + delta), type, exerciseType)[0, 0]; // option price with a higher rate for rho calculation
+            option.Rho = sign * (priceDeltaR - option.OptionPrice) / delta; // estimate option price sensitivity to percent rate
         }
 
-        private static double[,] createLattice(int nSteps, double dt, double S, double K, double sigma, double r, OptionType type)
+        // Returns option prices lattice as a two-dimensional array
+        private static double[,] createLattice(int nSteps, double dt, double S, double K, double sigma, double r, OptionType type, OptionExerciseType exerciseType)
         {
             double upFactor = Math.Pow(Math.E, sigma * Math.Sqrt(dt));
             double downFactor = 1 / upFactor;
             double p = (Math.Pow(Math.E, r * dt) - downFactor) / (upFactor - downFactor); // probability of an up-move
 
             double[,] underlyingPrice = new double[nSteps + 1, nSteps + 1]; // an array containing underlying prices of the underlying at each step
-            underlyingPrice[0, 0] = S; // price at the root of the tree is equal to the current price
-            underlyingPrice[nSteps, 0] = underlyingPrice[0, 0] * Math.Pow(downFactor, nSteps);
-
-            for (int i = 1; i <= nSteps; i++) // initialise asset prices at maturity
-            {
-                underlyingPrice[nSteps, i] = underlyingPrice[nSteps, i - 1] * upFactor / downFactor;
-            }
-
             double[,] lattice = new double[nSteps + 1, nSteps + 1]; // an array containing option prices of the underlying at each step
 
-            for (int i = 0; i <= nSteps; i++) // initialise option prices at maturity
+            // Build binomial tree
+            for (int i = 0; i <= nSteps; i++)
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    underlyingPrice[i, j] = S * Math.Pow(upFactor, j) * Math.Pow(downFactor, i - j);
+                }
+            }
+
+            // Initialise option prices at maturity
+            for (int i = 0; i <= nSteps; i++)
             {
                 if (type == OptionType.Call)
                 {
@@ -72,14 +78,24 @@ namespace OptionPricingModels.PricingModels {
                 }
             }
 
-            for (int i = nSteps - 1; i >= 0; i--) // step back through the tree
+            // Step back through the tree
+            for (int i = nSteps - 1; i >= 0; i--) 
             {
                 for (int j = 0; j <= i; j++)
                 {
-                    lattice[i, j] = Math.Pow(Math.E, -r * dt) * (p * lattice[i + 1, j + 1] + (1 - p) * lattice[i + 1, j]);
+                    if (exerciseType == OptionExerciseType.European) // if European
+                    {
+                        lattice[i, j] = Math.Pow(Math.E, -r * dt) * (p * lattice[i + 1, j + 1] + (1 - p) * lattice[i + 1, j]);
+                    }
+                    else // if American
+                    {
+                        if (type == OptionType.Call) // if a call
+                            lattice[i, j] = Math.Max(underlyingPrice[i, j] - K, Math.Pow(Math.E, -r * dt) * (p * lattice[i + 1, j + 1] + (1 - p) * lattice[i + 1, j]));
+                        else // if a put
+                            lattice[i, j] = Math.Max(K - underlyingPrice[i, j], Math.Pow(Math.E, -r * dt) * (p * lattice[i + 1, j + 1] + (1 - p) * lattice[i + 1, j]));
+                    }
                 }
             }
-
             return lattice;
         }
     }
