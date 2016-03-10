@@ -68,25 +68,33 @@ namespace OptionPricingModels.PricingModels {
 
                     if (exerciseType == OptionExerciseType.European) {
                         if (type == OptionType.Call) { // if European call
-                            lattice[i, 0] = 0; // boundary condition at S = 0
-                            lattice[i, nPriceSteps] = underlyingPrice[nPriceSteps] - K * Math.Pow(Math.E, -r * (nTimeSteps - i) * dt); // boundary condition at S = nPriceSteps
+                            //lattice[i, 0] = 0; // boundary condition at S = 0
+                            //lattice[i, nPriceSteps] = underlyingPrice[nPriceSteps] - K * Math.Pow(Math.E, -r * (nTimeSteps - i) * dt); // boundary condition at S = nPriceSteps
+                            lattice[i, 0] = (1 - r * dt) * lattice[i + 1, 0];
+                            lattice[i, nPriceSteps] = 2 * lattice[i, nPriceSteps - 1] - lattice[i, nPriceSteps - 2];
                             lattice[i, j] = Math.Pow(Math.E, -r * dt) * (pu * lattice[i + 1, j + 1] + pm * lattice[i + 1, j] + pd * lattice[i + 1, j - 1]);
                         }
                         else { // if European put
-                            lattice[i, 0] = K * Math.Pow(Math.E, -r * (nTimeSteps - i) * dt); // boundary condition at S = 0
-                            lattice[i, nPriceSteps] = 0; // boundary condition at S = nPriceSteps
+                            //lattice[i, 0] = K * Math.Pow(Math.E, -r * (nTimeSteps - i) * dt); // boundary condition at S = 0
+                            //lattice[i, nPriceSteps] = 0; // boundary condition at S = nPriceSteps
+                            lattice[i, 0] = (1 - r * dt) * lattice[i + 1, 0];
+                            lattice[i, nPriceSteps] = 2 * lattice[i, nPriceSteps - 1] - lattice[i, nPriceSteps - 2];
                             lattice[i, j] = Math.Pow(Math.E, -r * dt) * (pu * lattice[i + 1, j + 1] + pm * lattice[i + 1, j] + pd * lattice[i + 1, j - 1]);
                         }
                     }
                     else {
                         if (type == OptionType.Call) { // if American call
-                            lattice[i, 0] = 0; // boundary condition at S = 0
-                            lattice[i, nPriceSteps] = underlyingPrice[nPriceSteps] - K * Math.Pow(Math.E, -r * (nTimeSteps - i) * dt); // boundary condition at S = nPriceSteps
+                            //lattice[i, 0] = 0; // boundary condition at S = 0
+                            //lattice[i, nPriceSteps] = underlyingPrice[nPriceSteps] - K * Math.Pow(Math.E, -r * (nTimeSteps - i) * dt); // boundary condition at S = nPriceSteps
+                            lattice[i, 0] = (1 - r * dt) * lattice[i + 1, 0];
+                            lattice[i, nPriceSteps] = 2 * lattice[i, nPriceSteps - 1] - lattice[i, nPriceSteps - 2];
                             lattice[i, j] = Math.Max(underlyingPrice[j] - K, Math.Pow(Math.E, -r * dt) * (pu * lattice[i + 1, j + 1] + pm * lattice[i + 1, j] + pd * lattice[i + 1, j - 1]));
                         }
                         else { // if American put
-                            lattice[i, 0] = K * Math.Pow(Math.E, -r * (nTimeSteps - i) * dt); // boundary condition at S = 0
-                            lattice[i, nPriceSteps] = 0; // boundary condition at S = nPriceSteps
+                            //lattice[i, 0] = K * Math.Pow(Math.E, -r * (nTimeSteps - i) * dt); // boundary condition at S = 0
+                            //lattice[i, nPriceSteps] = 0; // boundary condition at S = nPriceSteps
+                            lattice[i, 0] = (1 - r * dt) * lattice[i + 1, 0];
+                            lattice[i, nPriceSteps] = 2 * lattice[i, nPriceSteps - 1] - lattice[i, nPriceSteps - 2];
                             lattice[i, j] = Math.Max(K - underlyingPrice[j], Math.Pow(Math.E, -r * dt) * (pu * lattice[i + 1, j + 1] + pm * lattice[i + 1, j] + pd * lattice[i + 1, j - 1]));
                         }
                     }
