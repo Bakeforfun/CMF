@@ -36,3 +36,6 @@ C:\Users\Konstantin\Dropbox\Lectures\L2\OptionPricing\OptionPricing\bin\Debug\Op
 \\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\obj\Debug\OptionPricing.g.resources
 \\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\obj\Debug\OptionPricing.Properties.Resources.resources
 \\Mac\Dropbox\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\obj\Debug\OptionPricing.csproj.GenerateResource.Cache
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\bin\Debug\OptionPricing.exe.config
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\obj\Debug\OptionPricing.exe
+C:\Users\Internet\Documents\CMF\Courses\Spring term\Algorithmic Trading\Lecture 1\OptionPricing\OptionPricing\obj\Debug\OptionPricing.pdb

@@ -14,6 +14,7 @@ namespace OptionPricingModels {
         private DateTime _expirationDateTime = DateTime.Now.AddDays(90);
         private double _gamma;
         private double _interestRate = 0.05;
+        private double _dividendRate = 0.0;
         private double _optionPrice;
         private int _quantity = 1;
         private double _rho;
@@ -102,6 +103,15 @@ namespace OptionPricingModels {
             get { return _interestRate; }
             set {
                 _interestRate = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public double DividendRate {
+            get { return _dividendRate; }
+            set
+            {
+                _dividendRate = value;
                 OnPropertyChanged();
             }
         }
