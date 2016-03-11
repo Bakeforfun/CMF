@@ -11,6 +11,7 @@ namespace OptionPricingModels.PricingModels {
             double K = option.Strike;
             double sigma = option.Volatility;
             double r = option.InterestRate;
+            double q = option.DividendRate;
             OptionType type = option.Type;
             OptionExerciseType exerciseType = option.ExerciseType;
 
@@ -19,7 +20,7 @@ namespace OptionPricingModels.PricingModels {
             double t = option.TimeToExpiry.Days / 365.0;
             double dt = t / nSteps; // time interval between steps
             
-            double[,] optionPrice = createLattice(S, K, sigma, r, type, exerciseType, nSteps, dt);
+            double[,] optionPrice = createLattice(S, K, sigma, r, q, type, exerciseType, nSteps, dt);
 
             var sign = option.Side == Side.Buy ? 1 : -1;
 
@@ -37,20 +38,20 @@ namespace OptionPricingModels.PricingModels {
             option.Theta = sign * (optionPrice[1, 1] - optionPrice[0, 0]) / dt;
             
             double delta = 0.001;
-            double priceDeltaVol = createLattice(S, K, (sigma + delta), r, type, exerciseType, nSteps, dt)[0, 0]; // option price with a higher volatily for vega calculation
+            double priceDeltaVol = createLattice(S, K, (sigma + delta), r, q, type, exerciseType, nSteps, dt)[0, 0]; // option price with a higher volatily for vega calculation
             option.Vega = sign * (priceDeltaVol - option.OptionPrice) / delta; // estimate option price sensitivity to volatility
 
-            double priceDeltaR = createLattice(S, K, sigma, (r + delta), type, exerciseType, nSteps, dt)[0, 0]; // option price with a higher rate for rho calculation
+            double priceDeltaR = createLattice(S, K, sigma, (r + delta), q, type, exerciseType, nSteps, dt)[0, 0]; // option price with a higher rate for rho calculation
             option.Rho = sign * (priceDeltaR - option.OptionPrice) / delta; // estimate option price sensitivity to percent rate
 
         }
 
         // Returns option prices lattice as a two-dimensional array
-        private static double[,] createLattice(double S, double K, double sigma, double r, OptionType type, OptionExerciseType exerciseType, int nSteps, double dt) {
+        private static double[,] createLattice(double S, double K, double sigma, double r, double q, OptionType type, OptionExerciseType exerciseType, int nSteps, double dt) {
             double upFactor = Math.Pow(Math.E, sigma * Math.Sqrt(2 * dt));
             double downFactor = 1 / upFactor;
 
-            double temp_1 = 0.5 * r * dt;
+            double temp_1 = 0.5 * (r - q) * dt;
             double temp_2 = sigma * Math.Sqrt(0.5 * dt);
             double pu = Math.Pow((Math.Pow(Math.E, temp_1) - Math.Pow(Math.E, -temp_2)) / (Math.Pow(Math.E, temp_2) - Math.Pow(Math.E, -temp_2)), 2); // probability of an up-move
             double pd = Math.Pow((Math.Pow(Math.E, temp_2) - Math.Pow(Math.E, temp_1)) / (Math.Pow(Math.E, temp_2) - Math.Pow(Math.E, -temp_2)), 2); // probability of a down-move
