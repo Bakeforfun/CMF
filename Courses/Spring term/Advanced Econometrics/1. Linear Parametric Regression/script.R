@@ -96,7 +96,12 @@ predict.arma <- function(model, data, newdata, alpha = 0.05) {
   list(fit = fit, lower = fit + delta*qt(alpha/2,df=df),
        upper = fit - delta*qt(alpha/2,df=df))
 }
-
-  ar1.frc <- predict.arma(model = ar1,
+ar1.frc <- predict.arma(model = ar1,
                         data = log(t.ozone)[1:(T-1)],
                         newdata = log(e.ozone), alpha = 0.1)
+
+par.frc <- predict(fit.par,
+                   newdata=data.frame(rad=e.rad[2:E],rad2=e.rad[2:E]^2),
+                   se.fit=TRUE,interval="prediction",level=0.90)
+
+frc <- exp(ar1.frc$fit[2:E] + par.frc$fit[,"fit"])
