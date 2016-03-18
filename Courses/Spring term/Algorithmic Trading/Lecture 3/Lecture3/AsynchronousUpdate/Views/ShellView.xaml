@@ -1,0 +1,106 @@
+﻿<Window x:Class="AsynchronousUpdate.Views.ShellView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewmodels="clr-namespace:AsynchronousUpdate.ViewModels"
+        xmlns:s="http://schemas.abtsoftware.co.uk/scichart"
+        mc:Ignorable="d"
+        Title="ShellView" Height="500" Width="800">
+    <TabControl>
+        <TabItem Header="SimpleUpdate">
+            <TabItem.DataContext>
+                <viewmodels:SimpleUpdateViewModel />
+            </TabItem.DataContext>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+
+                <TabControl Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                    <TabItem Header="Loading Application">
+                        <TextBlock Text="{Binding LoadingApplicationText}" />
+                    </TabItem>
+                    <TabItem Header="Asynchronous GUI Update" IsSelected="True">
+                        <TextBlock Text="{Binding AsynchronousUpdateText}" />
+                    </TabItem>
+                </TabControl>
+
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="SYNCHRONOUS UPDATE OF GUI" />
+                <TextBlock Grid.Row="1" Grid.Column="1" Text="ASYNCHRONOUS UPDATE OF GUI" />
+
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="{Binding BadUpdate}" HorizontalAlignment="Center"
+                           FontSize="30" />
+                <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding GoodUpdate}" HorizontalAlignment="Center"
+                           FontSize="30" />
+                <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Content="START"
+                        Command="{Binding StartCommand}" />
+
+            </Grid>
+        </TabItem>
+        <TabItem Header="ObservableCollection RealTime Update">
+            <TabItem.DataContext>
+                <viewmodels:AdvancedUpdateViewModel />
+            </TabItem.DataContext>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Text="{Binding Caption}" />
+                <DataGrid Grid.Row="1" ItemsSource="{Binding Quotes}" />
+
+
+                <Button Grid.Row="2" Grid.Column="0" Content="START" Command="{Binding StartCommand}" />
+
+            </Grid>
+        </TabItem>
+        <TabItem Header="SciChart RealTime" IsSelected="True">
+            <TabItem.DataContext>
+                <viewmodels:SciChartViewModel />
+            </TabItem.DataContext>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Text="{Binding Caption}" />
+                <s:SciChartSurface Grid.Row="1">
+                    <s:SciChartSurface.RenderableSeries>
+                        <s:FastLineRenderableSeries DataSeries="{Binding Line1Data}" Stroke="#99EE99"
+                                                    StrokeThickness="1" />
+                        <s:FastLineRenderableSeries DataSeries="{Binding Line2Data}" Stroke="#FF3300"
+                                                    StrokeThickness="1" />
+                    </s:SciChartSurface.RenderableSeries>
+
+                    <s:SciChartSurface.XAxis>
+                        <s:NumericAxis AutoRange="Always" />
+                    </s:SciChartSurface.XAxis>
+
+                    <s:SciChartSurface.YAxis>
+                        <s:NumericAxis GrowBy="0.1, 0.1" AutoRange="Always" />
+                    </s:SciChartSurface.YAxis>
+                </s:SciChartSurface>
+
+
+                <Button Grid.Row="2" Grid.Column="0" Content="START" Command="{Binding StartCommand}" />
+
+            </Grid>
+
+
+        </TabItem>
+    </TabControl>
+
+</Window>

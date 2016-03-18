@@ -1,0 +1,28 @@
+Options, futures and other Derivatives by John C. Hull (8th edition)
+Arbitrage Theory in Continuous Time by Tomas Bjork
+Paul Wilmott on Quantitative Finance (second edition)
+Numerical Mathematics and Computing by Ward Cheney and David Kingaid
+Monte Carlo Methods in Financial Engineering by Paul Glasserman
+Monte Carlo Methods in Finance by Peter Jackel
+
+
+Mathematical finance:
+
+Hull - introductory text on derivatives, is ideal for those with a limited background in mathematics.
+
+Bjork - concentrating on the probability theory of continuous arbitrage pricing of financial derivatives.
+
+
+Finite-difference methods:
+
+Brandimarte - different mathematical models and numerical techniques.
+
+
+Monte Carlo methods:
+
+Glasserman, Jackel -best books available, more than comprehensive.
+
+
+All three chapters: 
+
+Wilmott - presents all the current financial theories in a manner designed to make them "easy" to understand (unfortunately not rigorous).
