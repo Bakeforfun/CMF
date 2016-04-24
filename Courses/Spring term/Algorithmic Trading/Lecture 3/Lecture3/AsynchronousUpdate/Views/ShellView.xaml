@@ -3,14 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:viewmodels="clr-namespace:AsynchronousUpdate.ViewModels"
+        xmlns:viewmodels="namespace:AsynchronousUpdate.ViewModels"
         xmlns:s="http://schemas.abtsoftware.co.uk/scichart"
         mc:Ignorable="d"
         Title="ShellView" Height="500" Width="800">
     <TabControl>
         <TabItem Header="SimpleUpdate">
             <TabItem.DataContext>
-                <viewmodels:SimpleUpdateViewModel />
+                <viewmodels:SimpleUpdateViewModel/>
             </TabItem.DataContext>
             <Grid>
                 <Grid.RowDefinitions>
